@@ -158,6 +158,18 @@ export default function Portfolio() {
                   desc="Utility app for large-scale data cleaning and CRM support."
                   img="/emlic.png"
                 />
+                <ProjectCard 
+                  title="Emlic - Email Cleaner"
+                  stack="Python, SQLite, Streamlit"
+                  desc="Utility app for large-scale data cleaning and CRM support."
+                  img="/emlic.png"
+                />
+                <ProjectCard 
+                  title="Emlic - Email Cleaner"
+                  stack="Python, SQLite, Streamlit"
+                  desc="Utility app for large-scale data cleaning and CRM support."
+                  img="/emlic.png"
+                />
               </div>
             </div>
           </section>
