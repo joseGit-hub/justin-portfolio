@@ -16,7 +16,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Justin Rei | Portfolio',
-  description: 'Personal portfolio of Justin Rei E. Jose - Web Developer & Tech Enthusiast',
+  description: 'Personal portfolio of Justin Rei E. Jose',
 }
 
 export default function RootLayout({
