@@ -55,7 +55,7 @@ export default function Portfolio() {
       {showContent && (
         <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000">
           {/* About Section*/}
-          <section id="about" className="py-32 px-4 md:px-8 lg:px-16">
+          <section id="about" className="py-22 px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-20 items-center">
                 <div className="order-2 lg:order-1">
@@ -66,8 +66,8 @@ export default function Portfolio() {
                   
                   <div className="space-y-2 mb-12 text-xl md:text-2xl font-bold">
                     <p className="text-5xl font-black mb-4">22</p>
-                    <p className="text-muted-foreground uppercase tracking-widest text-sm">Filipino | Ilocano</p>
-                    <p className="text-muted-foreground uppercase tracking-widest text-sm">Umingan, Pangasinan, PHL.</p>
+                    <p className="text-muted-foreground uppercase tracking-widest text-lg">Filipino - Ilocano</p>
+                    <p className="text-muted-foreground uppercase tracking-widest text-lg">Umingan, Pangasinan, PHL.</p>
                   </div>
                   
                   <div className="flex items-center gap-8">
@@ -99,8 +99,8 @@ export default function Portfolio() {
             </div>
           </section>
 
-          {/* Education & Experience - Combined for "Big" layout */}
-          <section id="education" className="py-32 bg-foreground/5 border-y-4 border-foreground px-4 md:px-8 lg:px-16">
+          {/* Education & Experience*/}
+          <section id="education" className="py-22 bg-foreground/5 border-y-4 border-foreground px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-24">
                 {/* Education */}
@@ -134,7 +134,7 @@ export default function Portfolio() {
                       response times within their approx. 40,000 consumer-reach by enabling location-tagged reports.
                       </li>
                       <li className="flex gap-4"><span className="font-black">→</span>Fabricated and validated RJ45 Ethernet cables using crimping tools and testers 
-                      to maintain local network infrastructure</li>
+                      to maintain local network infrastructure.</li>
                     </ul>
                   </div>
                 </div>
@@ -142,8 +142,8 @@ export default function Portfolio() {
             </div>
           </section>
 
-          {/* Projects Section - Large Grid */}
-          <section id="projects" className="py-32 px-4 md:px-8 lg:px-16">
+          {/* Projects Section*/}
+          <section id="projects" className="py-12 px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
               <h2 className="section-title text-6xl md:text-8xl font-bold mb-20 italic">Projects</h2>
               <div className="grid md:grid-cols-2 gap-10">
@@ -155,6 +155,12 @@ export default function Portfolio() {
                   img="/r1-amianan.png"
                 />
                 <ProjectCard 
+                  title="Corge"
+                  stack="JavaScript, HTML/CSS, Electron"
+                  desc="Lazy Corgi Weather (Corge) serves as a non-intrusive, ambient awareness tool for your desktop."
+                  img="/corge.gif"
+                />
+                {/*<ProjectCard 
                   title="R1 Agri-Production Tracker"
                   stack="Python, Pandas, Plotly, SQLite, Streamlit"
                   desc="Developed an ETL pipeline using Python and Pandas to migrate 250+ rows of raw PSA Open STAT time-series data
@@ -162,23 +168,17 @@ export default function Portfolio() {
                   img="/r1-tracker.png"
                 />
                 <ProjectCard 
-                  title="Corge"
-                  stack="JavaScript, HTML/CSS, Electron"
-                  desc="Lazy Corgi Weather (Corge) serves as a non-intrusive, ambient awareness tool for your desktop."
-                  img="/corge.gif"
-                />
-                <ProjectCard 
                   title="Emlic - Email Cleaner"
                   stack="Python, SQLite, Streamlit"
                   desc="Utility app for large-scale data cleaning and CRM support."
                   img="/emlic.png"
-                />
+                />*/}
               </div>
             </div>
           </section>
 
           {/* Skills Section*/}
-          <section id="skills" className="py-32 bg-foreground text-background px-4 md:px-8 lg:px-16">
+          <section id="skills" className="py-22 bg-foreground text-background px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
               <h2 className="section-title text-6xl md:text-8xl font-bold mb-24 text-white">Skills & Proficiencies</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-16">
@@ -193,7 +193,7 @@ export default function Portfolio() {
           </section>
 
           {/* Creative Writing Section */}
-          <section id="writing" className="py-24 px-4 md:px-8 lg:px-16">
+          <section id="writing" className="py-12 px-4 md:px-8 lg:px-16">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-5xl md:text-7xl font-bold mb-16 italic underline decoration-accent">
                 Creative Writing
@@ -201,7 +201,6 @@ export default function Portfolio() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 
-                {/* Poem 1: Astoria */}
                 <WritingCard 
                   title="Astoria"
                   category="Poetry"
@@ -209,7 +208,6 @@ export default function Portfolio() {
                   img="/astoria.jpg" // The image with the #SCHEMAPENS branding
                 />
 
-                {/* Poem 2: The Free Suburban Sky */}
                 <WritingCard 
                   title="The Free Suburban Sky"
                   category="Literary"
@@ -230,7 +228,7 @@ export default function Portfolio() {
           <div className="w-full border-t-[2px] border-b-[2px] border-foreground bg-foreground h-[2px] my-2" />
 
           {/* Contact Section*/}
-          <section id="contact" className="py-20 px-4 md:px-8 lg:px-16">
+          <section id="contact" className="py-22 px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-20 items-center">
                 <div className="space-y-8">
