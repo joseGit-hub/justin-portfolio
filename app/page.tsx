@@ -120,11 +120,6 @@ export default function Portfolio() {
                       <p className="text-xl font-bold text-muted-foreground">EF SET</p>
                       <p className="font-mono text-sm mb-4 tracking-tighter">2026 | Online</p>
                     </div>
-                    <div className="relative pl-10 border-l-4 border-foreground/20">
-                      <h3 className="text-2xl font-black mb-2 uppercase">C2 Proficient English Certificate</h3>
-                      <p className="text-xl font-bold text-muted-foreground">EF SET</p>
-                      <p className="font-mono text-sm mb-4 tracking-tighter">2026 | Online</p>
-                    </div>
                   </div>
                 </div>
 
