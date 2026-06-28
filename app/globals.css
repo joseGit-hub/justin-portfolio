@@ -20,11 +20,15 @@
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.80 0.02 85);
+  --border: oklch(0.15 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --radius: 0.5rem;
-  --grid-color: oklch(0.75 0.02 200 / 0.3);
+  --radius: 0px;
+  --grid-color: oklch(0.75 0.02 200 / 0.25);
+  
+  --game-engine: oklch(0.25 0.05 240);
+  --game-status-completed: oklch(0.62 0.17 145);
+  --game-status-dev: oklch(0.60 0.21 45);
 }
 
 @theme inline {
@@ -50,10 +54,13 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --color-engine: var(--game-engine);
+  --color-game-success: var(--game-status-completed);
+  --color-game-warning: var(--game-status-dev);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
 }
 
 @layer base {
@@ -61,49 +68,45 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
-/* Graph Paper Background */
 .graph-paper {
   background-color: var(--background);
   background-image:
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-size: 32px 32px;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Section styles */
 .section-title {
   font-family: 'Playfair Display', serif;
   font-style: italic;
 }
 
-/* Handwritten feel */
 .handwritten {
   font-family: 'Patrick Hand', cursive;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--muted);
+  background: var(--background);
+  border-left: 4px solid var(--border);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 4px;
+  background: var(--foreground);
+  border: 2px solid var(--background);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted-foreground);
+  background: var(--accent);
 }
