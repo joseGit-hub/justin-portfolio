@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Linkedin, Github, ChevronDown, Activity, Menu, X, ChevronRight } from "lucide-react"
+import { Linkedin, Github, Activity, Menu, X, ChevronRight } from "lucide-react"
 
 interface Project {
   id: string
@@ -64,7 +64,7 @@ export default function Portfolio() {
         </div>
 
         <nav className="hidden lg:flex gap-6">
-          {["GAMES", "EDUCATION", "CONTACT"].map((item) => (
+          {["GAMES", "CONTACT"].map((item) => (
             <button 
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}
@@ -88,7 +88,7 @@ export default function Portfolio() {
       {/* MOBILE NAVIGATION OVERLAY */}
       {isMobileMenuOpen && (
         <div className="fixed top-[49px] left-0 w-full bg-white border-b-4 border-foreground z-40 p-6 font-mono text-sm font-bold flex flex-col gap-4 shadow-xl lg:hidden">
-          {["GAMES", "EDUCATION", "CONTACT"].map((item) => (
+          {["GAMES", "CONTACT"].map((item) => (
             <button 
               key={item} 
               onClick={() => scrollToSection(item.toLowerCase())}
@@ -106,60 +106,90 @@ export default function Portfolio() {
 
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 flex-grow items-stretch relative z-10">
           
-          {/* LAYOUT LEFT SIDEBAR */}
-          <div className="lg:col-span-3 border-b-4 lg:border-b-0 lg:border-r-4 border-foreground p-4 font-mono text-xs space-y-6 graph-paper bg-white/80 order-2 lg:order-1 relative z-20 overflow-y-auto max-h-[calc(100vh-100px)] lg:max-h-none flex flex-col justify-between">
-            <div className="space-y-6 flex-grow">
-              {/*<div>
-                <p className="font-black text-muted-foreground uppercase tracking-wider mb-2">// OUTLINER</p>
-                <ul className="space-y-1.5 font-bold text-[11px]">
-                  <li className="text-accent flex items-center gap-1">■ [01] Core_Viewport (About)</li>
-                  <li className="hover:text-accent cursor-pointer transition-colors" onClick={() => scrollToSection("games")}>□ [02] Build_Games</li>
-                  <li className="hover:text-accent cursor-pointer transition-colors" onClick={() => scrollToSection("education")}>□ [03] Node_Education_Exp</li>
-                </ul>
-              </div>*/}
+          {/* LEFT SIDEBAR (INCLUDES ACTIVE PROCESSES NOW) */}
+          <div className="lg:col-span-3 border-b-4 lg:border-b-0 lg:border-r-4 border-foreground p-5 md:p-6 flex flex-col justify-between space-y-6 graph-paper bg-white/80 order-2 lg:order-1 relative z-20">
+            <div className="space-y-6 w-full">
+              <div className="flex justify-between items-center border-b-2 border-foreground pb-2 font-mono bg-white backdrop-blur-xs px-1">
+                <span className="font-black text-xs text-muted-foreground uppercase">// INSPECTOR COMPONENT</span>
+                <span className="text-[10px] bg-zinc-200 px-1 font-bold">ID: P1</span>
+              </div>
 
-              <div className="space-y-3">
-                <p className="font-black text-muted-foreground uppercase tracking-wider">// ACTIVE PROCESS</p>
-                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[12px]">
-                  <p className="font-black text-foreground">Indie Game Development</p>
-                  <p className="text-muted-foreground text-[10px]">Status: Currently doing indie games as a side project.</p>
+              {/* PROFILE IMAGE */}
+              <div className="flex justify-center w-full pt-2">
+                <div className="relative group max-w-[140px] sm:max-w-[160px] w-full shrink-0">
+                  <div className="absolute inset-0 bg-[#E07A7A] translate-x-1.5 translate-y-1.5 border-2 border-foreground -z-10" />
+                  <div className="aspect-square overflow-hidden border-2 border-foreground bg-white">
+                    <img src="/profile-square.jpg" alt="Justin Rei" className="w-full h-full object-cover filter contrast-125" />
+                  </div>
                 </div>
-                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[12px]">
-                  <p className="font-black text-foreground">Part-Time Testing</p>
-                  <p className="text-muted-foreground text-[10px]">Status: Currently a part-time QA Tester.</p>
+              </div>
+
+              <div className="pt-2 border-t-2 border-dashed border-zinc-200 font-mono text-xs text-center">
+                <p className="text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
+                  Programmer and aspiring indie game developer.
+                </p>
+              </div>
+
+              {/* PROJECT STREAM LIST */}
+              <div className="pt-2 font-mono text-xs space-y-3 w-full">
+                <p className="font-black text-muted-foreground uppercase text-[10px] tracking-wider mb-1">// PROJECT_LINK_STREAM</p>
+                
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
+                    <span className="block text-[8px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">CORGE_WEATHER_UI</span>
+                    <span className="block text-[8px] text-zinc-400 font-bold">JAVASCRIPT / ELECTRON</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+              </div>
+
+              {/* REPOSITIONED: ACTIVE PROCESS MODULES */}
+              <div className="pt-4 border-t-2 border-dashed border-zinc-300 font-mono space-y-4">
+                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-black text-white px-1.5 py-0.5 text-[8px] font-bold tracking-widest">// ACTIVE_JOB_01</div>
+                  <h5 className="font-black text-xs text-foreground border-b border-foreground pb-0.5 mb-1 uppercase tracking-tight">Indie Game Dev</h5>
+                  <p className="text-zinc-500 text-[10px] font-medium leading-tight">
+                    Focusing on local game execution loops and modular logic pipeline developments.
+                  </p>
+                </div>
+
+                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-green-600 text-white px-1.5 py-0.5 text-[8px] font-bold tracking-widest">// ACTIVE_JOB_02</div>
+                  <h5 className="font-black text-xs text-foreground border-b border-foreground pb-0.5 mb-1 uppercase tracking-tight">Part-Time Testing</h5>
+                  <p className="text-zinc-500 text-[10px] font-medium leading-tight">
+                    Running regression diagnostics and maintaining state validation matrices.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="pt-6 border-t-2 border-foreground mt-auto">
-              <div className="space-y-4 text-[12px]">
-
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ TECH STACK</p>
-                  <p className="text-foreground font-black leading-tight">Java, C#, C, Python, SQL, Node.js, React.js, Next.js</p>
-                </div>
-
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ GAME DEVELOPMENT</p>
-                  <p className="text-foreground font-black leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
-                </div>
-
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ WRITING & EDITORIAL</p>
-                  <p className="text-foreground font-black leading-tight">Technical Writing, Creative Writing, Copywriting</p>
-                </div>
-
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ LANGUAGES</p>
-                  <p className="text-foreground font-black leading-tight">English (Fluent), Filipino, Ilocano (Native)</p>
-                </div>
-
-              </div>
+            <div className="text-[9px] text-center font-mono text-zinc-400 font-bold uppercase tracking-wider select-none pt-4">
+              * Module view refreshed *
             </div>
           </div>
 
-          {/* LAYOUT CENTER STAGE */}
-          <div className="lg:col-span-5 p-5 md:p-10 flex flex-col justify-center space-y-6 border-b-4 lg:border-b-0 order-1 lg:order-2 bg-transparent relative z-20">
+          {/* EXPANDED CENTER STAGE */}
+          <div className="lg:col-span-6 p-5 md:p-10 flex flex-col justify-center space-y-6 border-b-4 lg:border-b-0 order-1 lg:order-2 bg-transparent relative z-20">
             <span className="absolute top-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
             <span className="absolute bottom-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
             <span className="absolute top-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
@@ -174,18 +204,15 @@ export default function Portfolio() {
               </span>
             </div>
 
-            <br></br>
-            <br></br>
-            <br></br>
+            <br />
 
             <div className="text-center">
-              <h1 className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-none font-serif break-words">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-none font-serif break-words">
                 JUSTIN REI <span className="block text-accent decoration-[6px] md:decoration-[8px] decoration-black">JOSE</span>
               </h1>
             </div>
 
-            <br></br>
-            <br></br>
+            <br />
 
             <div className="flex justify-center items-center pt-2">
               <div className="w-32 h-32 transform hover:scale-105 transition-transform shrink-0">
@@ -202,83 +229,86 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <br></br>
+            <br />
 
             <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
-              <br></br>
-                <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
-                <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
-                  Scroll down for more.
-                </p>
+              <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
+              <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
+                Scroll down for more.
+              </p>
             </div>
-
           </div>
 
-          {/* LAYOUT RIGHT SIDEBAR - NOW FEATURING DISPLAY PICTURES IN THE PROJECT LINK STREAM */}
-          <div className="lg:col-span-4 border-l-0 lg:border-l-4 border-foreground p-5 md:p-6 flex flex-col justify-between space-y-6 graph-paper bg-white/80 order-3 relative z-20">
-            <div className="space-y-6 w-full">
-              <div className="flex justify-between items-center border-b-2 border-foreground pb-2 font-mono bg-white backdrop-blur-xs px-1">
-                <span className="font-black text-xs text-muted-foreground uppercase">// INSPECTOR COMPONENT</span>
-                <span className="text-[10px] bg-zinc-200 px-1 font-bold">ID: P1</span>
-              </div>
-
-              {/* PROFILE IMAGE ALIGNED IN THE CENTER */}
-              <div className="flex justify-center w-full pt-2">
-                <div className="relative group max-w-[140px] sm:max-w-[180px] w-full shrink-0">
-                  <div className="absolute inset-0 bg-[#E07A7A] translate-x-1.5 translate-y-1.5 border-2 border-foreground -z-10" />
-                  <div className="aspect-square overflow-hidden border-2 border-foreground bg-white">
-                    <img src="/profile-square.jpg" alt="Justin Rei" className="w-full h-full object-cover filter contrast-125" />
-                  </div>
+          {/* RIGHT SIDEBAR */}
+          <div className="lg:col-span-3 border-l-0 lg:border-l-4 border-foreground p-4 font-mono text-xs space-y-6 graph-paper bg-white/80 order-3 relative z-20 overflow-y-auto max-h-[calc(100vh-100px)] lg:max-h-none flex flex-col justify-between">
+            <div className="space-y-6 flex-grow">
+              
+              {/* ACADEMIC RECORD */}
+              <div className="space-y-3">
+                <p className="font-black text-muted-foreground uppercase tracking-wider">// ACADEMIC_RECORD</p>
+                <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <h4 className="text-[12px] font-black uppercase text-accent">BS In Computer Science</h4>
+                  <p className="text-foreground font-bold text-[11px] mt-0.5">STI College San Jose</p>
+                  <p className="text-zinc-400 text-[9px] font-medium">2026 (Graduating) • GPA 1.76</p>
+                  <p className="text-[10px] text-zinc-500 italic border-t border-dashed border-zinc-200 mt-2 pt-1 font-medium leading-tight">
+                    Thesis: GARDENPALS (IoT Hardware Simulation)
+                  </p>
                 </div>
               </div>
 
-              <br></br>
-
-              <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
-                <br></br>
-                <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
-                  Programmer and aspiring indie game developer.
-                </p>
-              </div>
-
-              {/* PROJECT STREAM LIST WITH IMAGES INCLUDED */}
-              <div className="pt-4 font-mono text-xs space-y-3 w-full">
-                <p className="font-black text-muted-foreground uppercase text-[10px] tracking-wider mb-1">// PROJECT_LINK_STREAM</p>
+              {/* EXPERIENCE LOG */}
+              <div className="space-y-3">
+                <p className="font-black text-muted-foreground uppercase tracking-wider">// EXPERIENCE_LOG</p>
                 
-                <div 
-                  onClick={() => scrollToSection("games")}
-                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
-                >
-                  <div className="w-12 h-12 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
+                <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
+                    <span className="font-black text-black text-[11px]">Freelance QA / Copy</span>
+                    <span className="text-[8px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
                   </div>
-                  <div className="flex-grow min-w-0">
-                    <span className="block font-black text-xs text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
-                    <span className="block text-[9px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
-                  </div>
-                  <span className="text-[9px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <p className="text-neutral-700 text-[10px] font-medium leading-tight">
+                    Bug-hunting for HatidGo (10k+ downloads). Crafted functional marketing copies.
+                  </p>
                 </div>
 
-                <div 
-                  onClick={() => scrollToSection("games")}
-                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
-                >
-                  <div className="w-12 h-12 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
+                    <span className="font-black text-black text-[11px]">Web Dev Intern</span>
+                    <span className="text-[8px] bg-neutral-700 text-white px-1 py-0.5 font-bold">SAJELCO</span>
                   </div>
-                  <div className="flex-grow min-w-0">
-                    <span className="block font-black text-xs text-foreground group-hover:text-accent transition-colors truncate">CORGE_WEATHER_UI</span>
-                    <span className="block text-[9px] text-zinc-400 font-bold">JAVASCRIPT / ELECTRON</span>
-                  </div>
-                  <span className="text-[9px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <p className="text-neutral-700 text-[10px] font-medium leading-tight">
+                    Migrated stack to React/Node. Built a location-tagged geospatial complaints engine for ~40k reach.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* TECH STACK MODULES */}
+            <div className="pt-4 border-t-2 border-foreground mt-auto">
+              <div className="space-y-3 text-[11px]">
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ TECH STACK</p>
+                  <p className="text-foreground font-black text-[10px] leading-tight">Java, C#, C, Python, SQL, Node, React, Next</p>
+                </div>
+
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ GAME DEV</p>
+                  <p className="text-foreground font-black text-[10px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
+                </div>
+
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ WRITING</p>
+                  <p className="text-foreground font-black text-[10px] leading-tight">Technical, Creative, Copywriting</p>
+                </div>
+
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ LANGUAGES</p>
+                  <p className="text-foreground font-black text-[10px] leading-tight">English, Filipino, Ilocano</p>
                 </div>
               </div>
             </div>
-
-            <div className="text-[9px] text-center font-mono text-zinc-400 font-bold uppercase tracking-wider select-none pt-4">
-              * Module view refreshed *
-            </div>
           </div>
+
         </div>
 
         <div className="w-full bg-white border-t-4 border-foreground px-4 py-2 flex justify-between items-center text-[9px] font-mono font-bold text-muted-foreground relative z-50">
@@ -287,7 +317,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* GAMES SECTION WITH STRICTLY MANUAL LAYOUT INJECTIONS */}
+      {/* GAMES SECTION */}
       <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
         <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
         <div className="max-w-[90rem] mx-auto relative z-10">
@@ -296,9 +326,10 @@ export default function Portfolio() {
             <p className="text-base sm:text-xl text-muted-foreground font-mono mt-2">// Personal projects, work and many more.</p>
           </div>
           
+          {/* GRID REMAINS OPEN AND EXPANDABLE */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
             
-            {/* MANUAL BUILD SLOT 01: R1 AMIANAN */}
+            {/* BUILD SLOT 01: R1 AMIANAN */}
             <div onClick={() => setActiveProject({
               id: "r1-amianan",
               title: "R1 Amianan Presyo",
@@ -334,7 +365,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* MANUAL BUILD SLOT 02: CORGE */}
+            {/* BUILD SLOT 02: CORGE */}
             <div onClick={() => setActiveProject({
               id: "corge",
               title: "Corge",
@@ -370,19 +401,22 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* MANUAL BLANK SLOT 03 */}
+            {/* SLOT 03 UNASSIGNED */}
             <div className="border-4 border-dashed border-zinc-300 bg-zinc-50/50 p-6 flex flex-col items-center justify-center text-center min-h-[500px] font-mono shadow-[4px_4px_0px_0px_rgba(230,230,230,1)]">
               <span className="text-zinc-400 font-bold text-sm mb-1">&gt;_ [ SLOT_03: UNASSIGNED ]</span>
               <span className="text-zinc-400 text-[11px]">Ready for custom engine initialization...</span>
             </div>
 
-            {/* MANUAL BLANK SLOT 04 */}
+            {/* SLOT 04 UNASSIGNED */}
             <div className="border-4 border-dashed border-zinc-300 bg-zinc-50/50 p-6 flex flex-col items-center justify-center text-center min-h-[500px] font-mono shadow-[4px_4px_0px_0px_rgba(230,230,230,1)]">
               <span className="text-zinc-400 font-bold text-sm mb-1">&gt;_ [ SLOT_04: UNASSIGNED ]</span>
               <span className="text-zinc-400 text-[11px]">Ready for custom engine initialization...</span>
             </div>
 
           </div>
+
+          {/* LOWER CONTAINER HAS BEEN COMPLETELY CLEARED OF COMPONENT LOGS FOR FUTURE EXPANSION ROOM */}
+
         </div>
       </section>
 
@@ -423,59 +457,6 @@ export default function Portfolio() {
         </div>
       )}
 
-      {/* EDUCATION & EXPERIENCE SECTION */}
-      <section id="education" className="py-20 border-b-4 border-foreground px-4 md:px-8 lg:px-16 scroll-mt-[49px] relative overflow-hidden bg-white">
-        <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
-        <div className="max-w-[90rem] mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            <div className="bg-white/95 border-4 border-foreground p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-12 italic uppercase tracking-tighter underline decoration-2">Education</h2>
-              <div className="space-y-12">
-                <div className="relative pl-8 border-l-4 border-foreground">
-                  <div className="absolute w-5 h-5 bg-foreground -left-[12px] top-0 rounded-full" />
-                  <h3 className="text-xl sm:text-2xl font-black mb-1 uppercase">BS In Computer Science</h3>
-                  <p className="text-base sm:text-xl font-bold text-muted-foreground mb-1">STI COLLEGE SAN JOSE</p>
-                  <p className="font-mono text-xs mb-3 tracking-tighter">San Jose City, N.E., PHL.</p>
-                  <p className="font-mono text-xs mb-3 tracking-tighter">2026 (Graduating) | GPA: 1.76/1.00 (90%)</p>
-                  <p className="text-sm sm:text-base italic bg-white inline-block px-2 py-1 border border-black font-medium">Thesis / Major Project: GARDENPALS (IoT Hardware Simulation & Engine Systems)</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="experience">
-              <div className="bg-[#f2efe9] border-4 sm:border-8 border-black p-6 sm:p-10 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
-                <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
-                  {/* Changed text-white to text-black */}
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tighter text-black">
-                    Web Development Intern
-                  </h3>
-                  {/* Kept badge styling clean and distinct */}
-                  <span className="bg-black text-[#f2efe9] font-mono text-[10px] px-2 py-0.5 font-bold tracking-wider">
-                    COMPLETED
-                  </span>
-                </div>
-                
-                {/* Changed text-zinc-300 to text-neutral-700 */}
-                <p className="text-base sm:text-xl font-bold mb-6 text-neutral-700 font-mono">
-                  SAJELCO | JAN 2026 - APR 2026
-                </p>
-                
-                {/* Changed text-zinc-200 to text-neutral-900 */}
-                <ul className="space-y-4 text-base sm:text-lg list-none mb-8 font-medium text-neutral-900">
-                  <li className="flex gap-3">
-                    {/* Ensured the arrow matches your brand's accent or a bold red/black */}
-                    <span className="font-black text-red-600">→</span>
-                    <span>
-                      Engineered real-time geospatial canvas module utilizing React.js and Node.js code layers.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CONNECT / FOOTER SECTION */}
       <section id="contact" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
         <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
@@ -483,11 +464,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] w-full">
-                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Contact Me Here</h2>
-
-                <br></br>
-
-                <p className="text-base sm:text-xl font-bold text-muted-foreground mb-1">Gmail: justinreijose27@gmail.com</p>
+                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Connect Module</h2>
               </div>
             </div>
 
