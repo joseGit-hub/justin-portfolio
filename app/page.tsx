@@ -150,11 +150,6 @@ export default function Portfolio() {
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ TOOLS</p>
-                  <p className="text-foreground font-black leading-tight">GitHub, MS Office 365, Jira, Trello</p>
-                </div>
-
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ LANGUAGES</p>
                   <p className="text-foreground font-black leading-tight">English (Fluent), Filipino, Ilocano (Native)</p>
                 </div>
@@ -189,6 +184,9 @@ export default function Portfolio() {
               </h1>
             </div>
 
+            <br></br>
+            <br></br>
+
             <div className="flex justify-center items-center pt-2">
               <div className="w-32 h-32 transform hover:scale-105 transition-transform shrink-0">
                 <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -205,14 +203,15 @@ export default function Portfolio() {
             </div>
 
             <br></br>
-            <br></br>
 
             <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
-              <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
-              <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
-                Programmer and aspiring indie game developer.
-              </p>
+              <br></br>
+                <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
+                <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
+                  Scroll down for more.
+                </p>
             </div>
+
           </div>
 
           {/* LAYOUT RIGHT SIDEBAR - NOW FEATURING DISPLAY PICTURES IN THE PROJECT LINK STREAM */}
@@ -231,6 +230,15 @@ export default function Portfolio() {
                     <img src="/profile-square.jpg" alt="Justin Rei" className="w-full h-full object-cover filter contrast-125" />
                   </div>
                 </div>
+              </div>
+
+              <br></br>
+
+              <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
+                <br></br>
+                <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
+                  Programmer and aspiring indie game developer.
+                </p>
               </div>
 
               {/* PROJECT STREAM LIST WITH IMAGES INCLUDED */}
@@ -275,9 +283,6 @@ export default function Portfolio() {
 
         <div className="w-full bg-white border-t-4 border-foreground px-4 py-2 flex justify-between items-center text-[9px] font-mono font-bold text-muted-foreground relative z-50">
           <p className="hidden md:inline">MOUSE POS: VIEWPORT_CENTER</p>
-          <button onClick={() => scrollToSection("games")} className="flex items-center gap-1 hover:text-foreground mx-auto md:mx-0">
-            SCROLL DOWN FOR BUILDS <ChevronDown size={12} className="animate-bounce" />
-          </button>
           <p className="hidden md:inline">FRAME_RATE: 60FPS</p>
         </div>
       </section>
