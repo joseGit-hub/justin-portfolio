@@ -64,7 +64,7 @@ export default function Portfolio() {
         </div>
 
         <nav className="hidden lg:flex gap-6">
-          {["GAMES", "CONTACT"].map((item) => (
+          {["PROJECTS", "CONTACT"].map((item) => (
             <button 
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}
@@ -267,31 +267,35 @@ export default function Portfolio() {
                 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[12px]">Freelance QA / Copy</span>
-                    <span className="text-[10px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
+                    <span className="font-black text-black text-[14px]">Freelance QA / Copy</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
                   </div>
 
-                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
-                    Quality Assurance Tester: Tested core user flows and conducted bug-hunting for HatidGo, 
-                    a ride-hailing and delivery app startup in the Philippines with over 10,000+ downloads, 
-                    ensuring a reliable experience for its expanding user base.
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    Freelance
                   </p>
 
-                  <br></br>
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Quality Assurance Tester
+                  </p>
 
-                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
-                    Copywriter: Authored website descriptions and marketing copy for independent writers to increase product visibility.
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Copywriter
                   </p>
                 </div>
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[12px]">Web Dev Intern</span>
-                    <span className="text-[10px] bg-neutral-700 text-white px-1 py-0.5 font-bold">SAJELCO</span>
+                    <span className="font-black text-black text-[14px]">Web Dev Intern</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">Jan 2026 - Apr 2026</span>
                   </div>
 
-                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
-                    React.js/Node.js | MySQL
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    San Jose City Electric Cooperative (SAJELCO)
+                  </p>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - React.js/Node.js | MySQL
                   </p>
                 </div>
               </div>
@@ -302,23 +306,23 @@ export default function Portfolio() {
             <div className="pt-4 border-t-2 border-foreground mt-auto">
               <div className="space-y-3 text-[12px]">
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ TECH STACK</p>
-                  <p className="text-foreground font-black text-[11px] leading-tight">Java, C#, C, Python, SQL, Node, React, Next</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ TECH STACK</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Java, C#, C, Python, SQL, Node.js, React.js, Next.js</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ GAME DEV</p>
-                  <p className="text-foreground font-black text-[11px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ GAME DEV</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ WRITING</p>
-                  <p className="text-foreground font-black text-[11px] leading-tight">Technical, Creative, Copywriting</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ WRITING</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Technical, Creative, Copywriting</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ LANGUAGES</p>
-                  <p className="text-foreground font-black text-[11px] leading-tight">English, Filipino, Ilocano</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ LANGUAGES</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">English, Filipino, Ilocano</p>
                 </div>
               </div>
             </div>
