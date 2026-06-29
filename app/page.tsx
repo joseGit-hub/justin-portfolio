@@ -125,8 +125,12 @@ export default function Portfolio() {
               </div>
 
               <div className="pt-2 border-t-2 border-dashed border-zinc-200 font-mono text-xs text-center">
-                <p className="text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
-                  Programmer and aspiring indie game developer.
+                <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
+                  Filipino | Ilocano 
+                </p>
+
+                <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
+                  Umingan, Pangasinan, PHL.
                 </p>
               </div>
 
@@ -247,11 +251,12 @@ export default function Portfolio() {
               <div className="space-y-3">
                 <p className="font-black text-muted-foreground uppercase tracking-wider">// ACADEMIC_RECORD</p>
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <h4 className="text-[12px] font-black uppercase text-accent">BS In Computer Science</h4>
-                  <p className="text-foreground font-bold text-[11px] mt-0.5">STI College San Jose</p>
-                  <p className="text-zinc-400 text-[9px] font-medium">2026 (Graduating) • GPA 1.76</p>
-                  <p className="text-[10px] text-zinc-500 italic border-t border-dashed border-zinc-200 mt-2 pt-1 font-medium leading-tight">
-                    Thesis: GARDENPALS (IoT Hardware Simulation)
+                  <h4 className="text-[16px] font-black uppercase text-accent">BS In Computer Science</h4>
+                  <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose</p>
+                  <p className="text-zinc-400 text-[13px] font-medium">2026 (Graduating) • GPA: 1.76 (90%)</p>
+                  <p className="text-zinc-400 text-[11px] font-medium">San Jose City, N.E., PHL.</p>
+                  <p className="text-[12px] text-zinc-500 italic border-t border-dashed border-zinc-200 mt-2 pt-1 font-medium leading-tight">
+                    Thesis: GARDENPALS: An IoT-Based Intelligent Vegetable Garden System
                   </p>
                 </div>
               </div>
@@ -262,21 +267,31 @@ export default function Portfolio() {
                 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[11px]">Freelance QA / Copy</span>
-                    <span className="text-[8px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
+                    <span className="font-black text-black text-[12px]">Freelance QA / Copy</span>
+                    <span className="text-[10px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
                   </div>
-                  <p className="text-neutral-700 text-[10px] font-medium leading-tight">
-                    Bug-hunting for HatidGo (10k+ downloads). Crafted functional marketing copies.
+
+                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
+                    Quality Assurance Tester: Tested core user flows and conducted bug-hunting for HatidGo, 
+                    a ride-hailing and delivery app startup in the Philippines with over 10,000+ downloads, 
+                    ensuring a reliable experience for its expanding user base.
+                  </p>
+
+                  <br></br>
+
+                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
+                    Copywriter: Authored website descriptions and marketing copy for independent writers to increase product visibility.
                   </p>
                 </div>
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[11px]">Web Dev Intern</span>
-                    <span className="text-[8px] bg-neutral-700 text-white px-1 py-0.5 font-bold">SAJELCO</span>
+                    <span className="font-black text-black text-[12px]">Web Dev Intern</span>
+                    <span className="text-[10px] bg-neutral-700 text-white px-1 py-0.5 font-bold">SAJELCO</span>
                   </div>
-                  <p className="text-neutral-700 text-[10px] font-medium leading-tight">
-                    Migrated stack to React/Node. Built a location-tagged geospatial complaints engine for ~40k reach.
+
+                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
+                    React.js/Node.js | MySQL
                   </p>
                 </div>
               </div>
@@ -285,25 +300,25 @@ export default function Portfolio() {
 
             {/* TECH STACK MODULES */}
             <div className="pt-4 border-t-2 border-foreground mt-auto">
-              <div className="space-y-3 text-[11px]">
+              <div className="space-y-3 text-[12px]">
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ TECH STACK</p>
-                  <p className="text-foreground font-black text-[10px] leading-tight">Java, C#, C, Python, SQL, Node, React, Next</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ TECH STACK</p>
+                  <p className="text-foreground font-black text-[11px] leading-tight">Java, C#, C, Python, SQL, Node, React, Next</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ GAME DEV</p>
-                  <p className="text-foreground font-black text-[10px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ GAME DEV</p>
+                  <p className="text-foreground font-black text-[11px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ WRITING</p>
-                  <p className="text-foreground font-black text-[10px] leading-tight">Technical, Creative, Copywriting</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ WRITING</p>
+                  <p className="text-foreground font-black text-[11px] leading-tight">Technical, Creative, Copywriting</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[10px]">▲ LANGUAGES</p>
-                  <p className="text-foreground font-black text-[10px] leading-tight">English, Filipino, Ilocano</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[12px]">▲ LANGUAGES</p>
+                  <p className="text-foreground font-black text-[11px] leading-tight">English, Filipino, Ilocano</p>
                 </div>
               </div>
             </div>
