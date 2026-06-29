@@ -436,7 +436,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            
 
             <div id="experience">
               <div className="bg-[#f2efe9] border-4 sm:border-8 border-black p-6 sm:p-10 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
