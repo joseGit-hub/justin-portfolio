@@ -120,13 +120,13 @@ export default function Portfolio() {
 
               <div className="space-y-3">
                 <p className="font-black text-muted-foreground uppercase tracking-wider">// ACTIVE PROCESS</p>
-                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[10px]">
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[12px]">
                   <p className="font-black text-foreground">Indie Game Development</p>
-                  <p className="text-muted-foreground text-[9px]">Status: Currently doing indie games as a side project.</p>
+                  <p className="text-muted-foreground text-[10px]">Status: Currently doing indie games as a side project.</p>
                 </div>
-                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[10px]">
+                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-[12px]">
                   <p className="font-black text-foreground">Part-Time Testing</p>
-                  <p className="text-muted-foreground text-[9px]">Status: Currently a part-time QA Tester.</p>
+                  <p className="text-muted-foreground text-[10px]">Status: Currently a part-time QA Tester.</p>
                 </div>
               </div>
             </div>
@@ -151,12 +151,12 @@ export default function Portfolio() {
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ TOOLS</p>
-                  <p className="text-foreground font-black leading-tight">GitHub, MS Office 365 (Word, PowerPoint, Excel), Jira, Trello</p>
+                  <p className="text-foreground font-black leading-tight">GitHub, MS Office 365, Jira, Trello</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b-2 border-foreground pb-1 mb-1.5 text-accent text-xs">▲ LANGUAGES</p>
-                  <p className="text-foreground font-black leading-tight">English (C2 Proficient Level), Filipino, Ilocano (Native)</p>
+                  <p className="text-foreground font-black leading-tight">English (Fluent), Filipino, Ilocano (Native)</p>
                 </div>
 
               </div>
@@ -165,10 +165,10 @@ export default function Portfolio() {
 
           {/* LAYOUT CENTER STAGE */}
           <div className="lg:col-span-5 p-5 md:p-10 flex flex-col justify-center space-y-6 border-b-4 lg:border-b-0 order-1 lg:order-2 bg-transparent relative z-20">
-            <span className="absolute top-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">┌ ┐</span>
-            <span className="absolute bottom-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">└ ┘</span>
+            <span className="absolute top-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
+            <span className="absolute bottom-4 left-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
             <span className="absolute top-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
-            <span className="absolute bottom-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┘ └</span>
+            <span className="absolute bottom-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
 
             <div className="flex flex-wrap gap-3 justify-center">
               <span className="bg-foreground text-background font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight">
