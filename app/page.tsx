@@ -143,6 +143,20 @@ export default function Portfolio() {
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">CORGE_WEATHER_UI</span>
+                    <span className="block text-[8px] text-zinc-400 font-bold">JAVASCRIPT / ELECTRON</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
                     <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
@@ -165,30 +179,47 @@ export default function Portfolio() {
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
-              </div>
 
-              {/* REPOSITIONED: ACTIVE PROCESS MODULES */}
-              <div className="pt-4 border-t-2 border-dashed border-zinc-300 font-mono space-y-4">
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-black text-white px-1.5 py-0.5 text-[8px] font-bold tracking-widest">// ACTIVE_JOB_01</div>
-                  <h5 className="font-black text-xs text-foreground border-b border-foreground pb-0.5 mb-1 uppercase tracking-tight">Indie Game Dev</h5>
-                  <p className="text-zinc-500 text-[10px] font-medium leading-tight">
-                    Focusing on local game execution loops and modular logic pipeline developments.
-                  </p>
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
+                    <span className="block text-[8px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
 
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-green-600 text-white px-1.5 py-0.5 text-[8px] font-bold tracking-widest">// ACTIVE_JOB_02</div>
-                  <h5 className="font-black text-xs text-foreground border-b border-foreground pb-0.5 mb-1 uppercase tracking-tight">Part-Time Testing</h5>
-                  <p className="text-zinc-500 text-[10px] font-medium leading-tight">
-                    Running regression diagnostics and maintaining state validation matrices.
-                  </p>
+              </div>
+
+              {/* GAMEDEV */}
+              <div className="pt-4 border-t-2 border-dashed border-zinc-200">
+                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative flex items-center justify-between gap-3 min-h-[64px]">
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2">
+                      <h5 className="text-[16px] font-black text-xs text-foreground uppercase tracking-tight">Indie Game Dev</h5>
+                      <span className="text-[12px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// Siyak</span>
+                    </div>
+                    <p className="text-zinc-500 text-[14px] font-medium leading-tight mt-0.5 truncate">
+                      Hobbyist GameDev ; itch.io
+                    </p>
+                  </div>
+
+                  <a 
+                    href="https://yourusername.itch.io" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
+                  >
+                    HUB &gt;
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="text-[9px] text-center font-mono text-zinc-400 font-bold uppercase tracking-wider select-none pt-4">
-              * Module view refreshed *
             </div>
           </div>
 
