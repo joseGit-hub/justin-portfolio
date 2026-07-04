@@ -143,8 +143,8 @@ export default function Portfolio() {
                     <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">4x4</span>
-                    <span className="block text-[10px] text-zinc-400 font-bold">PYGAME / PYTHON</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">4x4</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">PYGAME / PYTHON</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -157,8 +157,8 @@ export default function Portfolio() {
                     <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPP</span>
-                    <span className="block text-[10px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPP</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -171,22 +171,8 @@ export default function Portfolio() {
                     <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
-                    <span className="block text-[10px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
-                  </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
-                </div>
-
-                <div 
-                  onClick={() => scrollToSection("games")}
-                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
-                >
-                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
-                  </div>
-                  <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">CORGE_WEATHER_UI</span>
-                    <span className="block text-[8px] text-zinc-400 font-bold">JAVASCRIPT / ELECTRON</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -199,8 +185,8 @@ export default function Portfolio() {
                     <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
-                    <span className="block text-[8px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -213,7 +199,7 @@ export default function Portfolio() {
                   <div className="min-w-0">
                     <div className="flex items-center gap-2">
                       <h5 className="text-[16px] font-black text-xs text-foreground uppercase tracking-tight">Indie Game Dev</h5>
-                      <span className="text-[12px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// Siyak</span>
+                      <span className="text-[11px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// Siyak</span>
                     </div>
                     <p className="text-zinc-500 text-[14px] font-medium leading-tight mt-0.5 truncate">
                       Hobbyist GameDev ; itch.io
@@ -221,7 +207,32 @@ export default function Portfolio() {
                   </div>
 
                   <a 
-                    href="https://yourusername.itch.io" 
+                    href="https://siyak.itch.io" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
+                  >
+                    HUB &gt;
+                  </a>
+                </div>
+              </div>
+
+              {/* GITHUB */}
+
+              <div>
+                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative flex items-center justify-between gap-3 min-h-[64px]">
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2">
+                      <h5 className="text-[16px] font-black text-xs text-foreground uppercase tracking-tight">GitHub Portfolio</h5>
+                      <span className="text-[11px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// joseGit-hub</span>
+                    </div>
+                    <p className="text-zinc-500 text-[14px] font-medium leading-tight mt-0.5 truncate">
+                      Check out my other projects here:
+                    </p>
+                  </div>
+
+                  <a 
+                    href="https://github.com/joseGit-hub" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
