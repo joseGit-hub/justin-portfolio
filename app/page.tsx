@@ -126,12 +126,9 @@ export default function Portfolio() {
 
               <div className="pt-2 border-t-2 border-dashed border-zinc-200 font-mono text-xs text-center">
                 <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
-                  Filipino | Ilocano 
+                  Filipino-Ilocano | Umingan, Pangasinan, PHL.
                 </p>
 
-                <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
-                  Umingan, Pangasinan, PHL.
-                </p>
               </div>
 
               {/* PROJECT STREAM LIST */}
@@ -146,8 +143,8 @@ export default function Portfolio() {
                     <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">CORGE_WEATHER_UI</span>
-                    <span className="block text-[8px] text-zinc-400 font-bold">JAVASCRIPT / ELECTRON</span>
+                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">4x4</span>
+                    <span className="block text-[10px] text-zinc-400 font-bold">PYGAME / PYTHON</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -157,11 +154,25 @@ export default function Portfolio() {
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/r1-amianan.png" alt="R1 Amianan" className="w-full h-full object-cover filter contrast-110" />
+                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[11px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
-                    <span className="block text-[8px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
+                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPP</span>
+                    <span className="block text-[10px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[12px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
+                    <span className="block text-[10px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -268,6 +279,7 @@ export default function Portfolio() {
 
             <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
               <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
+
               <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
                 Scroll down for more.
               </p>
@@ -281,39 +293,26 @@ export default function Portfolio() {
               {/* ACADEMIC RECORD */}
               <div className="space-y-3">
                 <p className="font-black text-muted-foreground uppercase tracking-wider">// ACADEMIC_RECORD</p>
+
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <h4 className="text-[16px] font-black uppercase text-accent">BS In Computer Science</h4>
                   <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose</p>
-                  <p className="text-zinc-400 text-[13px] font-medium">2026 (Graduating) • GPA: 1.76 (90%)</p>
+                  <p className="text-zinc-400 text-[12px] font-medium">2026 (Graduating) • GPA: 1.76 (90%)</p>
                   <p className="text-zinc-400 text-[11px] font-medium">San Jose City, N.E., PHL.</p>
-                  <p className="text-[12px] text-zinc-500 italic border-t border-dashed border-zinc-200 mt-2 pt-1 font-medium leading-tight">
-                    Thesis: GARDENPALS: An IoT-Based Intelligent Vegetable Garden System
-                  </p>
                 </div>
+
+                <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <h4 className="text-[16px] font-black uppercase text-accent">Training</h4>
+                  <p className="text-zinc-400 text-[12px] font-medium">Google IT Support Professional Certificate | Coursera</p>
+                  <p className="text-zinc-400 text-[12px] font-medium">UC Davis Content Marketing Specialization | Coursera</p>
+                  <p className="text-zinc-400 text-[12px] font-medium">C2 Proficient English Certificate | EF SET  </p>
+                </div>
+
               </div>
 
               {/* EXPERIENCE LOG */}
               <div className="space-y-3">
                 <p className="font-black text-muted-foreground uppercase tracking-wider">// EXPERIENCE_LOG</p>
-                
-                <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[14px]">Freelance QA / Copy</span>
-                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
-                  </div>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    Freelance
-                  </p>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Quality Assurance Tester
-                  </p>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Copywriter
-                  </p>
-                </div>
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
@@ -329,6 +328,26 @@ export default function Portfolio() {
                     - React.js/Node.js | MySQL
                   </p>
                 </div>
+
+                <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
+                    <span className="font-black text-black text-[14px]">Freelance QA / Writer</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
+                  </div>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Quality Assurance Tester (2026-Present)
+                  </p>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Content Writer (2023-Present)
+                  </p>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Copywriter (2020-21)
+                  </p>
+                </div>
+
               </div>
 
             </div>
@@ -353,8 +372,9 @@ export default function Portfolio() {
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ LANGUAGES</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">English, Filipino, Ilocano</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">English (C2 Proficient), Filipino & Ilocano (Native)</p>
                 </div>
+
               </div>
             </div>
           </div>
@@ -464,9 +484,6 @@ export default function Portfolio() {
             </div>
 
           </div>
-
-          {/* LOWER CONTAINER HAS BEEN COMPLETELY CLEARED OF COMPONENT LOGS FOR FUTURE EXPANSION ROOM */}
-
         </div>
       </section>
 
@@ -514,7 +531,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] w-full">
-                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Connect Module</h2>
+                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Connect</h2>
               </div>
             </div>
 
