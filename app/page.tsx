@@ -154,7 +154,7 @@ export default function Portfolio() {
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                    <img src="/graphh1.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPP</span>
@@ -168,7 +168,7 @@ export default function Portfolio() {
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                    <img src="/flyHammyCover.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
@@ -351,10 +351,6 @@ export default function Portfolio() {
                   </p>
 
                   <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Content Writer (2023-Present)
-                  </p>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
                     - Copywriter (2020-21)
                   </p>
                 </div>
@@ -373,7 +369,7 @@ export default function Portfolio() {
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ GAME DEV</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">Unity, Godot, UI/UX, GDD Outlines</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Unity, Godot, UI/UX, GDD Outlines, Sound Design</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
@@ -392,148 +388,206 @@ export default function Portfolio() {
 
         </div>
 
-        <div className="w-full bg-white border-t-4 border-foreground px-4 py-2 flex justify-between items-center text-[9px] font-mono font-bold text-muted-foreground relative z-50">
+        <div className="w-full bg-white border-t-4 border-foreground px-3 py-2 flex justify-between items-center text-[9px] font-mono font-bold text-muted-foreground relative z-50">
           <p className="hidden md:inline">MOUSE POS: VIEWPORT_CENTER</p>
           <p className="hidden md:inline">FRAME_RATE: 60FPS</p>
         </div>
       </section>
 
-      {/* GAMES SECTION */}
-      <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
-        <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
-        <div className="max-w-[90rem] mx-auto relative z-10">
-          <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block mb-12 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-            <h2 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">My Projects</h2>
-            <p className="text-base sm:text-xl text-muted-foreground font-mono mt-2">// Personal projects, work and many more.</p>
-          </div>
+    {/* MY PROJECTS SECTION */}
+    <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
+      <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
+      <div className="max-w-[90rem] mx-auto relative z-10">
+        <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block mb-12 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+          <h2 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">My Projects</h2>
+        </div>
+        
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
           
-          {/* GRID REMAINS OPEN AND EXPANDABLE */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
-            
-            {/* BUILD SLOT 01: R1 AMIANAN */}
-            <div onClick={() => setActiveProject({
-              id: "r1-amianan",
-              title: "R1 Amianan Presyo",
-              role: "Gameplay Programmer",
-              teamSize: "1",
-              duration: "6 Weeks",
-              engineTech: "Python / Streamlit",
-              shortDesc: "Developed an agricultural simulation app tracking commodity pricing workflows. Features procedural arithmetic calculations.",
-              longDesc: "This simulation layout initially started as an internal systems mapping structure. It handles deep state pipelines, managing how inventory updates interact with shifting regional metrics.",
-              extendedLog: "Designed and implemented a modular custom state runner engine to process data streams reactively.",
-              img: "/r1-amianan.png"
-            })} className="cursor-pointer">
-              <div className="bg-white border-4 border-foreground p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col h-full min-h-[500px]">
-                <div className="relative aspect-video w-full bg-zinc-100 border-2 border-foreground overflow-hidden mb-4 shrink-0">
-                  <img src="/r1-amianan.png" alt="R1 Amianan Presyo" className="w-full h-full object-cover filter contrast-110" />
+          {/* SLOT 01 */}
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+            <div className="relative aspect-video w-full bg-zinc-900 border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
+              [ GAME IS STILL UNDER DEVELOPMENT ]
+            </div>
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">4x4</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">Pygame / Python</span>
                 </div>
-                <div className="font-mono text-xs space-y-2 flex-grow flex flex-col justify-between">
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start border-b border-zinc-200 pb-1">
-                      <span className="font-black text-sm uppercase tracking-tight">R1 Amianan Presyo</span>
-                      <span className="bg-zinc-200 px-1 text-[10px] font-bold">Python / Streamlit</span>
-                    </div>
-                    <p className="text-muted-foreground text-[11px] font-medium leading-relaxed">
-                      Developed an agricultural simulation app tracking commodity pricing workflows. Features procedural arithmetic calculations and real-time visualization graphs.
-                    </p>
-                  </div>
-                  <div className="pt-3 border-t border-dashed border-zinc-200 grid grid-cols-2 gap-1.5 text-[10px] text-zinc-500 font-bold shrink-0">
-                    <p>ROLE: <span className="text-foreground font-black">Gameplay Programmer</span></p>
-                    <p>TEAM: <span className="text-foreground font-black">1 Person</span></p>
-                    <p className="col-span-2">DURATION: <span className="text-foreground font-black">6 Weeks</span></p>
-                  </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    An fast-paced neon infinite runner built with custom physics modification layers. Features highly optimized dynamic chunk-loading pipelines and recursive object pooling managers to handle rendering hundreds of obstacles seamlessly on mobile environments.
+                  </p>
                 </div>
               </div>
-            </div>
-
-            {/* BUILD SLOT 02: CORGE */}
-            <div onClick={() => setActiveProject({
-              id: "corge",
-              title: "Corge",
-              role: "Gameplay Programmer",
-              teamSize: "2",
-              duration: "4 Months",
-              engineTech: "JavaScript / Electron",
-              shortDesc: "Lazy Corgi Weather (Corge) acts as an atmospheric UI overlay, executing background loop processing onto desktop space.",
-              longDesc: "Corge bridges web technology with raw native windowing components to display interactive desktop companions.",
-              extendedLog: "Leveraged custom Electron main-process wrappers to manipulate screen space alpha values dynamically.",
-              img: "/corge.gif"
-            })} className="cursor-pointer">
-              <div className="bg-white border-4 border-foreground p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col h-full min-h-[500px]">
-                <div className="relative aspect-video w-full bg-zinc-100 border-2 border-foreground overflow-hidden mb-4 shrink-0">
-                  <img src="/corge.gif" alt="Corge" className="w-full h-full object-cover filter contrast-110" />
+              
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
                 </div>
-                <div className="font-mono text-xs space-y-2 flex-grow flex flex-col justify-between">
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start border-b border-zinc-200 pb-1">
-                      <span className="font-black text-sm uppercase tracking-tight">Corge</span>
-                      <span className="bg-zinc-200 px-1 text-[10px] font-bold">JavaScript / Electron</span>
-                    </div>
-                    <p className="text-muted-foreground text-[11px] font-medium leading-relaxed">
-                      Lazy Corgi Weather (Corge) acts as an atmospheric UI overlay, executing background loop processing and drawing asset pipelines directly onto desktop space.
-                    </p>
-                  </div>
-                  <div className="pt-3 border-t border-dashed border-zinc-200 grid grid-cols-2 gap-1.5 text-[10px] text-zinc-500 font-bold shrink-0">
-                    <p>ROLE: <span className="text-foreground font-black">Gameplay Programmer</span></p>
-                    <p>TEAM: <span className="text-foreground font-black">2 Person</span></p>
-                    <p className="col-span-2">DURATION: <span className="text-foreground font-black">4 Months</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* SLOT 03 UNASSIGNED */}
-            <div className="border-4 border-dashed border-zinc-300 bg-zinc-50/50 p-6 flex flex-col items-center justify-center text-center min-h-[500px] font-mono shadow-[4px_4px_0px_0px_rgba(230,230,230,1)]">
-              <span className="text-zinc-400 font-bold text-sm mb-1">&gt;_ [ SLOT_03: UNASSIGNED ]</span>
-              <span className="text-zinc-400 text-[11px]">Ready for custom engine initialization...</span>
-            </div>
-
-            {/* SLOT 04 UNASSIGNED */}
-            <div className="border-4 border-dashed border-zinc-300 bg-zinc-50/50 p-6 flex flex-col items-center justify-center text-center min-h-[500px] font-mono shadow-[4px_4px_0px_0px_rgba(230,230,230,1)]">
-              <span className="text-zinc-400 font-bold text-sm mb-1">&gt;_ [ SLOT_04: UNASSIGNED ]</span>
-              <span className="text-zinc-400 text-[11px]">Ready for custom engine initialization...</span>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* DETAIL MODAL OVERLAY */}
-      {activeProject && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-xs z-50 flex items-center justify-center p-4 overflow-y-auto">
-          <div className="bg-[#121212] border-4 border-foreground w-full max-w-4xl text-white shadow-[8px_8px_0px_0px_rgba(245,166,35,1)] flex flex-col max-h-[90vh] relative">
-            <div className="bg-black p-3 border-b-2 border-zinc-800 flex justify-between items-center font-mono text-xs text-zinc-400 shrink-0">
-              <span className="text-accent tracking-widest font-bold">// SYSTEM_INSPECTOR: {activeProject.id.toUpperCase()}</span>
-              <button onClick={() => setActiveProject(null)} className="bg-zinc-800 text-white p-1 hover:bg-accent hover:text-black transition-colors border border-zinc-600 font-bold flex items-center gap-1 text-[11px] px-2">
-                CLOSE [ESC] <X size={14} />
-              </button>
-            </div>
-            <div className="overflow-y-auto p-5 md:p-8 space-y-8 custom-scrollbar">
-              <div className="relative aspect-video max-h-[350px] w-full bg-zinc-900 border-2 border-zinc-800 overflow-hidden">
-                <img src={activeProject.img} alt={activeProject.title} className="w-full h-full object-cover" />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 pt-16">
-                  <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tight font-serif text-white">{activeProject.title}</h3>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 border-b border-zinc-800 pb-8">
-                <div className="md:col-span-7 space-y-3">
-                  <h4 className="text-sm font-mono uppercase text-accent tracking-widest font-black">// About</h4>
-                  <p className="text-zinc-300 text-sm md:text-base leading-relaxed font-medium">{activeProject.longDesc}</p>
-                </div>
-                <div className="md:col-span-5 bg-black/40 border border-zinc-800 p-4 font-mono text-xs space-y-3">
-                  <h4 className="text-[11px] font-black uppercase text-zinc-400 tracking-wider border-b border-zinc-800 pb-1">Project Info</h4>
-                  <div className="space-y-2 text-zinc-300">
-                    <p className="flex justify-between"><span>• Role:</span> <span className="font-bold text-white">{activeProject.role}</span></p>
-                    <p className="flex justify-between"><span>• Team Size:</span> <span className="font-bold text-white">{activeProject.teamSize} Person</span></p>
-                    <p className="flex justify-between"><span>• Timeframe:</span> <span className="font-bold text-white">{activeProject.duration}</span></p>
-                    <p className="flex justify-between"><span>• Engine/Tech:</span> <span className="font-bold text-accent">{activeProject.engineTech}</span></p>
-                  </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
+                  >
+                    Play Game
+                  </a>
+                  
+                  {/*<a href="#" className="flex-1 min-w-[120px] text-center bg-zinc-100 hover:bg-zinc-200 text-foreground font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
+                    Itch.io
+                  </a>*/}
+                  
                 </div>
               </div>
             </div>
           </div>
+
+          {/* SLOT 02 */}
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+            <div className="relative aspect-video w-full bg-white border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
+              <img 
+                src="/graphh1.png" 
+                alt="GRAHPP Screenshot" 
+                className="w-full h-full object-contain filter contrast-110" 
+              />
+            </div>
+
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahpp</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    Developed a coordinate-based arcade survival loop where players intercept time-decaying alert nodes 
+                    by manipulating independent X and Y axis sliders with grid path obstruction, and power-up systems.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
+                </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
+                  >
+                    Play Game
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SLOT 03 */}
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+          <div className="grid grid-cols-2 gap-4 mb-6 shrink-0">
+
+            <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
+              <img src="/flyHammy1.png" className="w-full h-full object-cover filter contrast-110" />
+            </div>
+
+            <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
+              <img src="/flyHammy2.png" className="w-full h-full object-cover filter contrast-110" />
+            </div>
+          </div>
+
+          <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Fly Hammy!</span>
+                <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
+              </div>
+              <div className="space-y-2">
+                <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                  Developed an arcade-style Flappy Bird remake using native JavaScript and HTML5 Canvas, implementing mechanics like a jump-triggered 
+                  rotational rolling animation and a dynamic collision-detection pipeline.
+                </p>
+              </div>
+            </div>
+    
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
+                </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a 
+                    href="https://siyak.itch.io/fly-hammy" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
+                  >
+                    Play Game
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SLOT 04 */}
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+            <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
+              <img src="/r1-amianan.png" alt="R1 Amianan Presyo" className="w-full h-full object-cover filter contrast-110" />
+            </div>
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">R1 Amianan Presyo</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">Python / Streamlit</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    An interactive real-time monitoring and logistics tool designed to track agricultural commodity prices and regional weather conditions across Region I (Ilocos Region), Philippines.
+                    Amianan Presyo (Northern Prices) serves as a centralized hub for farmers, traders, and logistics planners to monitor the fluctuating market landscape of Northern Luzon.
+                  </p>
+
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    <span className="font-black uppercase tracking-wide text-foreground">Key Features</span><br />
+                    A. Real-Time Price Monitor<br />
+                    B. Historical Trend Analysis<br />
+                    C. Regional Weather Integration<br />
+                    D. Logistics & Cost Calculator
+                  </p>
+
+                </div>
+              </div>
+              
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Personal Project</span>
+                </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a href="https://r1-amianan.streamlit.app/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
+                    Live Project
+                  </a>
+                  <a href="https://github.com/joseGit-hub/R1-Amianan" target="_blank" rel="noopener noreferrer"  className="flex-1 min-w-[120px] text-center bg-zinc-100 hover:bg-zinc-200 text-foreground font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      )}
+      </div>
+    </section>
 
       {/* CONNECT / FOOTER SECTION */}
       <section id="contact" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
