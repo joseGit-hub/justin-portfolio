@@ -143,7 +143,7 @@ export default function Portfolio() {
                     <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">4x4</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">BARAJA</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">PYGAME / PYTHON</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
@@ -254,7 +254,7 @@ export default function Portfolio() {
 
             <div className="flex flex-wrap gap-3 justify-center">
               <span className="bg-foreground text-background font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight">
-                STATUS: GRADUATING 2026
+                STATUS: Game Dev
               </span>
               <span className="bg-green-600 text-white font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                 LOBBY: OPEN TO ROLES
@@ -308,7 +308,7 @@ export default function Portfolio() {
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <h4 className="text-[16px] font-black uppercase text-accent">BS In Computer Science</h4>
                   <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose</p>
-                  <p className="text-zinc-400 text-[12px] font-medium">2026 (Graduating) • GPA: 1.76 (90%)</p>
+                  <p className="text-zinc-400 text-[12px] font-medium">2026 • GPA: 1.76 (90%)</p>
                   <p className="text-zinc-400 text-[11px] font-medium">San Jose City, N.E., PHL.</p>
                 </div>
 
@@ -413,13 +413,13 @@ export default function Portfolio() {
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">4x4</span>
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Baraja</span>
                   <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">Pygame / Python</span>
                 </div>
                 <div className="space-y-2">
                   <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    An fast-paced neon infinite runner built with custom physics modification layers. Features highly optimized dynamic chunk-loading pipelines and recursive object pooling managers to handle rendering hundreds of obstacles seamlessly on mobile environments.
+                    Here's the idea for now: Cards and Operations.
                   </p>
                 </div>
               </div>
@@ -485,7 +485,7 @@ export default function Portfolio() {
                     rel="noopener noreferrer" 
                     className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
                   >
-                    Play Game
+                    TO BE DEPLOYED
                   </a>
                 </div>
               </div>
@@ -579,6 +579,40 @@ export default function Portfolio() {
                   </a>
                   <a href="https://github.com/joseGit-hub/R1-Amianan" target="_blank" rel="noopener noreferrer"  className="flex-1 min-w-[120px] text-center bg-zinc-100 hover:bg-zinc-200 text-foreground font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
                     GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+            <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
+              <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
+            </div>
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">SAJELCO</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">React.js / Node.js</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer Intern</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    Migrated SAJELCO’s website to a React.js/Node.js stack and created a geospatial complaints module, 
+                    accelerating response times within their approx. 40,000 consumer-reach by enabling location-tagged reports/complaints.
+                  </p>
+
+                </div>
+              </div>
+              
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Intern Project</span>
+                </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a href="https://sajelco.net/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
+                    Live Project
                   </a>
                 </div>
               </div>
