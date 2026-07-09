@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Linkedin, Github, Activity, Menu, X, ChevronRight } from "lucide-react"
+import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
 
 interface Project {
   id: string
@@ -191,6 +192,20 @@ export default function Portfolio() {
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
 
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">SAJELCO WEBSITE</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">REACT.JS / NODE.JS</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+
               </div>
 
               {/* GAMEDEV */}
@@ -208,31 +223,6 @@ export default function Portfolio() {
 
                   <a 
                     href="https://siyak.itch.io" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
-                  >
-                    HUB &gt;
-                  </a>
-                </div>
-              </div>
-
-              {/* GITHUB */}
-
-              <div>
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative flex items-center justify-between gap-3 min-h-[64px]">
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2">
-                      <h5 className="text-[16px] font-black text-xs text-foreground uppercase tracking-tight">GitHub Portfolio</h5>
-                      <span className="text-[11px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// joseGit-hub</span>
-                    </div>
-                    <p className="text-zinc-500 text-[14px] font-medium leading-tight mt-0.5 truncate">
-                      Check out my other projects here:
-                    </p>
-                  </div>
-
-                  <a 
-                    href="https://github.com/joseGit-hub" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
@@ -291,7 +281,42 @@ export default function Portfolio() {
             <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
               <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
 
-              <p className="text-center text-zinc-500 text-[11px] font-medium max-w-xs mx-auto">
+              <div className="flex justify-center gap-4 pt-2 mb-10 mt-5">
+                {/* GitHub */}
+                <a
+                  href="https://github.com/joseGit-hub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="group flex h-11 w-11 items-center justify-center border-2 border-black bg-[#181717] text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <FaGithub className="h-6 w-6 transition-transform group-hover:scale-110" />
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/justinreijose"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="group flex h-11 w-11 items-center justify-center border-2 border-black bg-[#0A66C2] text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <FaLinkedin className="h-6 w-6 transition-transform group-hover:scale-110" />
+                </a>
+
+                {/* itch.io */}
+                <a
+                  href="https://siyak.itch.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="itch.io"
+                  className="group flex h-11 w-11 items-center justify-center border-2 border-black bg-[#FA5C5C] text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <FaItchIo className="h-6 w-6 transition-transform group-hover:scale-110" />
+                </a>
+              </div>
+
+              <p className="text-center text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
                 Scroll down for more.
               </p>
             </div>
