@@ -431,56 +431,13 @@ export default function Portfolio() {
         
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
-          
-          {/* SLOT 01 */}
-          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
-            <div className="relative aspect-video w-full bg-zinc-900 border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
-              [ GAME IS STILL UNDER DEVELOPMENT ]
-            </div>
-            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Baraja</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">Pygame / Python</span>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
-                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Here's the idea for now: Cards and Operations.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
-                </div>
-                {/* ACTION BUTTONS */}
-                <div className="flex flex-wrap gap-3 pt-2">
-                  <a 
-                    href="#" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
-                  >
-                    Play Game
-                  </a>
-                  
-                  {/*<a href="#" className="flex-1 min-w-[120px] text-center bg-zinc-100 hover:bg-zinc-200 text-foreground font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
-                    Itch.io
-                  </a>*/}
-                  
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* SLOT 02 */}
+          {/* GRAHPPY */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
             <div className="relative aspect-video w-full bg-white border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
               <img 
                 src="/graphh1.png" 
-                alt="GRAHPP Screenshot" 
+                alt="GRAHPPY Screenshot" 
                 className="w-full h-full object-contain filter contrast-110" 
               />
             </div>
@@ -488,7 +445,7 @@ export default function Portfolio() {
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahpp</span>
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahppy</span>
                   <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
                 </div>
                 <div className="space-y-2">
@@ -519,54 +476,42 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* SLOT 03 */}
+          {/* SAJELCO WEBSITE */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
-          <div className="grid grid-cols-2 gap-4 mb-6 shrink-0">
-
-            <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
-              <img src="/flyHammy1.png" className="w-full h-full object-cover filter contrast-110" />
+            <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
+              <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
             </div>
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">SAJELCO</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">React.js / Node.js</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer Intern</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    Migrated SAJELCO’s website to a React.js/Node.js stack and created a geospatial complaints module, 
+                    accelerating response times within their approx. 40,000 consumer-reach by enabling location-tagged reports/complaints.
+                  </p>
 
-            <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
-              <img src="/flyHammy2.png" className="w-full h-full object-cover filter contrast-110" />
-            </div>
-          </div>
-
-          <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Fly Hammy!</span>
-                <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
+                </div>
               </div>
-              <div className="space-y-2">
-                <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
-                <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                  Developed an arcade-style Flappy Bird remake using native JavaScript and HTML5 Canvas, implementing mechanics like a jump-triggered 
-                  rotational rolling animation and a dynamic collision-detection pipeline.
-                </p>
-              </div>
-            </div>
-    
+              
               <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
                 <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
+                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Intern Project</span>
                 </div>
                 {/* ACTION BUTTONS */}
                 <div className="flex flex-wrap gap-3 pt-2">
-                  <a 
-                    href="https://siyak.itch.io/fly-hammy" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
-                  >
-                    Play Game
+                  <a href="https://sajelco.net/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
+                    Live Project
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* SLOT 04 */}
+          {/* R1-Amianan Presyo */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
             <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
               <img src="/r1-amianan.png" alt="R1 Amianan Presyo" className="w-full h-full object-cover filter contrast-110" />
@@ -612,40 +557,54 @@ export default function Portfolio() {
             </div>
           </div>
 
+          {/* FLY HAMMY! */}
+
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
-            <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
-              <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
+            <div className="grid grid-cols-2 gap-4 mb-6 shrink-0">
+
+              <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
+                <img src="/flyHammy1.png" className="w-full h-full object-cover filter contrast-110" />
+              </div>
+
+              <div className="relative aspect-[9/16] bg-zinc-700 border-2 border-foreground overflow-hidden flex items-center justify-center text-zinc-500 font-mono font-bold text-sm text-center p-2">
+                <img src="/flyHammy2.png" className="w-full h-full object-cover filter contrast-110" />
+              </div>
             </div>
+
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">SAJELCO</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">React.js / Node.js</span>
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Fly Hammy!</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer Intern</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Migrated SAJELCO’s website to a React.js/Node.js stack and created a geospatial complaints module, 
-                    accelerating response times within their approx. 40,000 consumer-reach by enabling location-tagged reports/complaints.
+                    Developed an arcade-style Flappy Bird remake using native JavaScript and HTML5 Canvas, implementing mechanics like a jump-triggered 
+                    rotational rolling animation and a dynamic collision-detection pipeline.
                   </p>
-
                 </div>
               </div>
-              
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Intern Project</span>
-                </div>
-                {/* ACTION BUTTONS */}
-                <div className="flex flex-wrap gap-3 pt-2">
-                  <a href="https://sajelco.net/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
-                    Live Project
-                  </a>
+      
+                <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                  <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                    PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
+                  </div>
+                  {/* ACTION BUTTONS */}
+                  <div className="flex flex-wrap gap-3 pt-2">
+                    <a 
+                      href="https://siyak.itch.io/fly-hammy" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
+                    >
+                      Play Game
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
-
+ 
         </div>
       </div>
     </section>
