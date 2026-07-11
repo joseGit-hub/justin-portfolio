@@ -135,21 +135,6 @@ export default function Portfolio() {
               {/* PROJECT STREAM LIST */}
               <div className="pt-2 font-mono text-xs space-y-3 w-full">
                 <p className="font-black text-muted-foreground uppercase text-[10px] tracking-wider mb-1">// PROJECT_LINK_STREAM</p>
-                
-                <div 
-                  onClick={() => scrollToSection("games")}
-                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
-                >
-                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/corge.gif" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
-                  </div>
-                  <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">BARAJA</span>
-                    <span className="block text-[11px] text-zinc-400 font-bold">PYGAME / PYTHON</span>
-                  </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
-                </div>
-
 
                 <div 
                   onClick={() => scrollToSection("games")}
@@ -159,7 +144,7 @@ export default function Portfolio() {
                     <img src="/graphh1.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPP</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPPY</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
