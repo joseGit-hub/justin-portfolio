@@ -195,27 +195,26 @@ export default function Portfolio() {
               </div>
               
 
-              {/* GAMEDEV */}
-              <div className="pt-4 border-t-2 border-dashed border-zinc-200">
-                <div className="bg-white border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] relative flex items-center justify-between gap-3 min-h-[64px]">
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2">
-                      <h5 className="text-[16px] font-black text-xs text-foreground uppercase tracking-tight">Indie Game Dev</h5>
-                      <span className="text-[11px] bg-black text-white px-1 font-bold font-mono tracking-wider shrink-0">// Siyak</span>
-                    </div>
-                    <p className="text-zinc-500 text-[14px] font-medium leading-tight mt-0.5 truncate">
-                      Hobbyist GameDev ; itch.io
-                    </p>
+              <div className="border-t-2 border-dashed border-zinc-300 pt-4 mt-4">
+                <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  
+                  <div className="mb-4">
+                    <h5 className="text-[14px] font-black uppercase tracking-widest">
+                      {/* Header in Salmon, Email in Black */}
+                      <span className="text-[#e26d6a] text-[14px]">CONTACT_ME: </span> 
+                      <span className="text-black text-[12px]">justinreijose27@gmail.com</span>
+                    </h5>
                   </div>
 
-                  <a 
-                    href="https://siyak.itch.io" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-zinc-100 hover:bg-black hover:text-white text-[9px] font-mono font-black tracking-wider border border-foreground py-1 px-2 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none shrink-0"
+                  <a
+                    href="/your-resume.pdf"
+                    download
+                    className="flex items-center justify-between w-full border-2 border-black bg-[#e26d6a] text-white px-5 py-3 text-[14px] font-black uppercase tracking-tight hover:bg-black transition-colors"
                   >
-                    HUB &gt;
+                    <span>Download Resume</span>
+                    <span className="bg-white text-[#e26d6a] px-2 py-0.5 font-black">↓</span>
                   </a>
+                  
                 </div>
               </div>
 
@@ -230,9 +229,6 @@ export default function Portfolio() {
             <span className="absolute bottom-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
 
             <div className="flex flex-wrap gap-3 justify-center">
-              <span className="bg-foreground text-background font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight">
-                STATUS: Game Dev
-              </span>
               <span className="bg-green-600 text-white font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                 LOBBY: OPEN TO ROLES
               </span>
@@ -327,7 +323,6 @@ export default function Portfolio() {
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <h4 className="text-[16px] font-black uppercase text-accent">Training</h4>
                   <p className="text-zinc-400 text-[12px] font-medium">Google IT Support Professional Certificate | Coursera</p>
-                  <p className="text-zinc-400 text-[12px] font-medium">UC Davis Content Marketing Specialization | Coursera</p>
                   <p className="text-zinc-400 text-[12px] font-medium">C2 Proficient English Certificate | EF SET  </p>
                 </div>
 
