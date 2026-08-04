@@ -318,7 +318,6 @@ export default function Portfolio() {
                   <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose</p>
                   <p className="text-zinc-400 text-[12px] font-medium">2026 • GPA: 1.76 (90%)</p>
                   <p className="text-zinc-400 text-[11px] font-medium">San Jose City, N.E., PHL.</p>
-                  <p className="text-zinc-400 text-[10px] font-medium">Thesis: "GardenPals: An IoT Based Intelligent Vegetable Garden System"</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
@@ -352,8 +351,8 @@ export default function Portfolio() {
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[14px]">Freelance QA / Writer</span>
-                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2020-PRES</span>
+                    <span className="font-black text-black text-[14px]">Freelancer</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2024-PRES</span>
                   </div>
 
                   <p className="text-neutral-700 text-[12px] font-medium leading-tight">
@@ -361,7 +360,11 @@ export default function Portfolio() {
                   </p>
 
                   <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Copywriter (2020-21)
+                    - Software Developer (2024-Present)
+                  </p>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    - Technical Writer (2024-Present)
                   </p>
                 </div>
 
@@ -374,17 +377,17 @@ export default function Portfolio() {
               <div className="space-y-3 text-[12px]">
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ TECH STACK</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">Java, Python, MySQL, SQLite, MS SQL, Node.js, Next.js</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Java, Python, C++, MySQL, MS SQL, React.js, Node.js</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ IT & Networks</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">LAN/WLAN, TCP/IP, Cisco Packet Tracer, Networking, Active Directory, Troubleshooting</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">LAN/WAN, TCP/IP, DHCP, DNS, VPN, Ethernet, Cisco Packet Tracer, VirtualBox, Troubleshooting</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ DevOps & Tools</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">GitHub, VirtualBox, Docker, Jira, Agile, Manual QA Testing, Technical Writing</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ Tools</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">GitHub, Active Directory, Docker, Jira, Agile, MS Office 365 (Word, PowerPoint, Excel, Teams), Canva</p>
                 </div>
 
               </div>
