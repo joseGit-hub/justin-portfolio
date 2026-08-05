@@ -207,7 +207,7 @@ export default function Portfolio() {
                   </div>
 
                   <a
-                    href="/your-resume.pdf"
+                    href="/JOSE-JUSTIN_REI-Resume.pdf"
                     download
                     className="flex items-center justify-between w-full border-2 border-black bg-[#e26d6a] text-white px-5 py-3 text-[14px] font-black uppercase tracking-tight hover:bg-black transition-colors"
                   >
