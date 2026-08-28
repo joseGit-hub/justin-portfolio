@@ -136,34 +136,22 @@ export default function Portfolio() {
               <div className="pt-2 font-mono text-xs space-y-3 w-full">
                 <p className="font-black text-muted-foreground uppercase text-[10px] tracking-wider mb-1">// PROJECT_LINK_STREAM</p>
 
+                {/* SAJELCO Website */}
                 <div 
                   onClick={() => scrollToSection("games")}
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/graphh1.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                    <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPPY</span>
-                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">SAJELCO WEBSITE</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">REACT.JS / NODE.JS</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
 
-                <div 
-                  onClick={() => scrollToSection("games")}
-                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
-                >
-                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/flyHammyCover.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
-                  </div>
-                  <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
-                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
-                  </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
-                </div>
-
+                {/* R1 - Amianan Presyo */}
                 <div 
                   onClick={() => scrollToSection("games")}
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
@@ -178,16 +166,33 @@ export default function Portfolio() {
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
 
+
+                {/* GRAPHYY */}
                 <div 
                   onClick={() => scrollToSection("games")}
                   className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
                 >
                   <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
-                    <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
+                    <img src="/graphh1.png" alt="Graphyy" className="w-full h-full object-cover filter contrast-110" />
                   </div>
                   <div className="flex-grow min-w-0">
-                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">SAJELCO WEBSITE</span>
-                    <span className="block text-[11px] text-zinc-400 font-bold">REACT.JS / NODE.JS</span>
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPPY</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                </div>
+
+                {/* Fly Hammy! */}
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/flyHammyCover.png" alt="Corge UI" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
@@ -309,7 +314,18 @@ export default function Portfolio() {
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[14px]">Web Dev Intern</span>
+                    <span className="font-black text-black text-[14px]">Quality Assurance Tester</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">Mar 2026 - Present</span>
+                  </div>
+
+                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                    Freelance | Nueva Technology
+                  </p>
+                </div>
+
+                <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
+                    <span className="font-black text-black text-[14px]">Web Dev & IT Intern</span>
                     <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">Jan 2026 - Apr 2026</span>
                   </div>
 
@@ -317,27 +333,19 @@ export default function Portfolio() {
                     San Jose City Electric Cooperative (SAJELCO)
                   </p>
 
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
+                  <p className="text-neutral-700 text-[11px] font-medium leading-tight">
                     - React.js/Node.js | MySQL
                   </p>
                 </div>
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
-                    <span className="font-black text-black text-[14px]">Freelancer</span>
-                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2024-PRES</span>
+                    <span className="font-black text-black text-[14px]">Technical Writer</span>
+                    <span className="text-[12px] bg-black text-white px-1 py-0.5 font-bold">2021-2026</span>
                   </div>
 
                   <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Quality Assurance Tester (2026-Present)
-                  </p>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Software Developer (2024-Present)
-                  </p>
-
-                  <p className="text-neutral-700 text-[12px] font-medium leading-tight">
-                    - Technical Writer (2024-Present)
+                    Freelance | Remote
                   </p>
                 </div>
 
