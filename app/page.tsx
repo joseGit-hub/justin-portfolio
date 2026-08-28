@@ -411,7 +411,7 @@ export default function Portfolio() {
                     Migrated SAJELCO’s website to a React.js/Node.js stack and created a geospatial complaints module, 
                     accelerating response times within their approx. 40,000 consumer-reach by enabling location-tagged reports/complaints.
                   </p>
-
+ 
                 </div>
               </div>
               
@@ -577,7 +577,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] w-full">
-                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Connect</h2>
+                <h2 className="text-5xl md:text-6xl font-black italic uppercase tracking-tighter">Connect  Now!</h2>
               </div>
             </div>
 
@@ -604,12 +604,11 @@ export default function Portfolio() {
                 </div>
               </a>
             </div>
+
           </div>
 
-          <div className="mt-20 pt-8 border-t-2 border-dashed border-zinc-400 flex flex-col sm:flex-row justify-between items-center gap-4 font-mono text-[10px] text-muted-foreground relative z-20">
-            <p className="bg-white/80 px-2 py-0.5 rounded-xs">© 2026 JUSTIN REI E. JOSE. ALL RIGHTS RESERVED.</p>
-            <p className="bg-zinc-100 border border-zinc-300 px-2 py-0.5 font-bold">[ SYSTEM_TERMINATED_SUCCESSFULLY ]</p>
-          </div>
+          <p className="bg-white/80 px-2 py-0.5 rounded-xs">© 2026 JUSTIN REI E. JOSE. ALL RIGHTS RESERVED.</p>
+          
         </div>
       </section>
 
