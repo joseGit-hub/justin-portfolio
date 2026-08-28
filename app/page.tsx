@@ -120,7 +120,7 @@ export default function Portfolio() {
                 <div className="relative group max-w-[140px] sm:max-w-[160px] w-full shrink-0">
                   <div className="absolute inset-0 bg-[#E07A7A] translate-x-1.5 translate-y-1.5 border-2 border-foreground -z-10" />
                   <div className="aspect-square overflow-hidden border-2 border-foreground bg-white">
-                    <img src="/profile-square.jpg" alt="Justin Rei" className="w-full h-full object-cover filter contrast-125" />
+                    <img src="/profile-square.png" alt="Justin Rei" className="w-full h-full object-cover filter contrast-125" />
                   </div>
                 </div>
               </div>
@@ -192,30 +192,6 @@ export default function Portfolio() {
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
                 </div>
 
-              </div>
-              
-
-              <div className="border-t-2 border-dashed border-zinc-300 pt-4 mt-4">
-                <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  
-                  <div className="mb-4">
-                    <h5 className="text-[14px] font-black uppercase tracking-widest">
-                      {/* Header in Salmon, Email in Black */}
-                      <span className="text-[#e26d6a] text-[14px]">CONTACT_ME: </span> 
-                      <span className="text-black text-[12px]">justinreijose27@gmail.com</span>
-                    </h5>
-                  </div>
-
-                  <a
-                    href="/JOSE-JUSTIN_REI-Resume.pdf"
-                    download
-                    className="flex items-center justify-between w-full border-2 border-black bg-[#e26d6a] text-white px-5 py-3 text-[14px] font-black uppercase tracking-tight hover:bg-black transition-colors"
-                  >
-                    <span>Download Resume</span>
-                    <span className="bg-white text-[#e26d6a] px-2 py-0.5 font-black">↓</span>
-                  </a>
-                  
-                </div>
               </div>
 
             </div>
@@ -315,17 +291,14 @@ export default function Portfolio() {
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <h4 className="text-[16px] font-black uppercase text-accent">BS In Computer Science</h4>
-                  <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose</p>
-                  <p className="text-zinc-400 text-[12px] font-medium">2026 • GPA: 1.76 (90%)</p>
+                  <p className="text-foreground font-bold text-[15px] mt-0.5">STI College San Jose, 2026.</p>
                   <p className="text-zinc-400 text-[11px] font-medium">San Jose City, N.E., PHL.</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <h4 className="text-[16px] font-black uppercase text-accent">Training</h4>
-                  <p className="text-zinc-400 text-[12px] font-medium">Cisco Certified Support Technician | Cisco (In Progress)</p>
-                  <p className="text-zinc-400 text-[12px] font-medium">Cisco Network Technician Learning Path | Cisco </p>
-                  <p className="text-zinc-400 text-[12px] font-medium">Google IT Support Professional Certificate | Coursera</p>
-                  <p className="text-zinc-400 text-[12px] font-medium">C2 Proficient English Certificate | EF SET  </p>
+                  <h4 className="text-[16px] font-black uppercase text-accent">Certifications & Training</h4>
+                  <p className="text-zinc-400 text-[12px] font-medium">HubSpot Certifications | HubSpot Academy </p>
+                  <p className="text-zinc-400 text-[12px] font-medium">Cisco Data Analytics, UC Davis Content Marketing </p>
                 </div>
 
               </div>
@@ -372,22 +345,22 @@ export default function Portfolio() {
 
             </div>
 
-            {/* TECH STACK MODULES */}
+            {/* SKILLS MODULES */}
             <div className="pt-4 border-t-2 border-foreground mt-auto">
               <div className="space-y-3 text-[12px]">
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ TECH STACK</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">Java, Python, C++, MySQL, MS SQL, React.js, Node.js</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ TECHNICAL SKILLS</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">SQL, Python, Java, HTML/CSS, React.js, Next.js, Wireframing, Software Prototyping, Agile, QA Testing </p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ IT & Networks</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">LAN/WAN, TCP/IP, DHCP, DNS, VPN, Ethernet, Cisco Packet Tracer, VirtualBox, Troubleshooting</p>
+                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ COMPETENCIES</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">UI/UX Design, Web Design, HCI, Data Analysis, Copywriting, Digital Marketing, SEO, Technical Writing</p>
                 </div>
 
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ Tools</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">GitHub, Active Directory, Docker, Jira, Agile, MS Office 365 (Word, PowerPoint, Excel, Teams), Canva</p>
+                  <p className="text-foreground font-black text-[12px] leading-tight">Figma, Canva, Photoshop, Excel, Power BI, Tableau, HubSpot, Jira, GitHub, MS Office 365, CapCut, Penpot</p>
                 </div>
 
               </div>
