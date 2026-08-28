@@ -111,7 +111,7 @@ export default function Portfolio() {
           <div className="lg:col-span-3 border-b-4 lg:border-b-0 lg:border-r-4 border-foreground p-5 md:p-6 flex flex-col justify-between space-y-6 graph-paper bg-white/80 order-2 lg:order-1 relative z-20">
             <div className="space-y-6 w-full">
               <div className="flex justify-between items-center border-b-2 border-foreground pb-2 font-mono bg-white backdrop-blur-xs px-1">
-                <span className="font-black text-xs text-muted-foreground uppercase">// INSPECTOR COMPONENT</span>
+                <span className="font-black text-xs text-muted-foreground uppercase">// WHO AM I</span>
                 <span className="text-[10px] bg-zinc-200 px-1 font-bold">ID: P1</span>
               </div>
 
@@ -127,14 +127,18 @@ export default function Portfolio() {
 
               <div className="pt-2 border-t-2 border-dashed border-zinc-200 font-mono text-xs text-center">
                 <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
-                  Filipino-Ilocano | Umingan, Pangasinan, PHL.
+                  Designer | Developer
+                </p>
+
+                <p className="text-zinc-500 text-[12px] font-medium max-w-xs mx-auto">
+                  Filipino-Ilocano | Pangasinan, Philippines.
                 </p>
 
               </div>
 
-              {/* PROJECT STREAM LIST */}
-              <div className="pt-2 font-mono text-xs space-y-3 w-full">
-                <p className="font-black text-muted-foreground uppercase text-[10px] tracking-wider mb-1">// PROJECT_LINK_STREAM</p>
+              {/* MY PROJECTS */}
+              <div className="pt-2 font-mono text-xs space-y-5 w-full">
+                <p className="font-black text-muted-foreground uppercase text-[12px] tracking-wider mb-1">// MY PROJECTS</p>
 
                 {/* SAJELCO Website */}
                 <div 
@@ -148,7 +152,7 @@ export default function Portfolio() {
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">SAJELCO WEBSITE</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">REACT.JS / NODE.JS</span>
                   </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
                 </div>
 
                 {/* R1 - Amianan Presyo */}
@@ -163,7 +167,7 @@ export default function Portfolio() {
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">R1 AMIANAN PRESYO</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">PYTHON / STREAMLIT</span>
                   </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
                 </div>
 
 
@@ -179,7 +183,7 @@ export default function Portfolio() {
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">GRAHPPY</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
                 </div>
 
                 {/* Fly Hammy! */}
@@ -194,11 +198,39 @@ export default function Portfolio() {
                     <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">FLY HAMMY!</span>
                     <span className="block text-[11px] text-zinc-400 font-bold">JAVASCRIPT / HTML5</span>
                   </div>
-                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">RUN &gt;</span>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
                 </div>
 
-              </div>
+                {/* TBA 1 */}
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/" alt="TBA" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">TBA Project</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">TBA</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
+                </div>
 
+                {/* TBA 2 */}
+                <div 
+                  onClick={() => scrollToSection("games")}
+                  className="bg-white border-2 border-foreground p-2 flex items-center gap-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-50 cursor-pointer transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] group"
+                >
+                  <div className="w-10 h-10 border border-foreground bg-zinc-100 overflow-hidden shrink-0">
+                    <img src="/" alt="TBA" className="w-full h-full object-cover filter contrast-110" />
+                  </div>
+                  <div className="flex-grow min-w-0">
+                    <span className="block font-black text-[14px] text-foreground group-hover:text-accent transition-colors truncate">TBA Project</span>
+                    <span className="block text-[11px] text-zinc-400 font-bold">TBA</span>
+                  </div>
+                  <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -209,12 +241,6 @@ export default function Portfolio() {
             <span className="absolute top-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
             <span className="absolute bottom-4 right-4 font-mono text-zinc-300 text-lg hidden sm:inline">┐ ┌</span>
 
-            <div className="flex flex-wrap gap-3 justify-center">
-              <span className="bg-green-600 text-white font-mono text-[9px] sm:text-[10px] px-2.5 py-0.5 font-black uppercase tracking-tight border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                LOBBY: OPEN TO ROLES
-              </span>
-            </div>
-
             <br />
 
             <div className="text-center">
@@ -223,6 +249,7 @@ export default function Portfolio() {
               </h1>
             </div>
 
+            <br />
             <br />
 
             <div className="flex justify-center items-center pt-2">
@@ -376,49 +403,53 @@ export default function Portfolio() {
           </div>
 
         </div>
-
-        <div className="w-full bg-white border-t-4 border-foreground px-3 py-2 flex justify-between items-center text-[9px] font-mono font-bold text-muted-foreground relative z-50">
-          <p className="hidden md:inline">MOUSE POS: VIEWPORT_CENTER</p>
-          <p className="hidden md:inline">FRAME_RATE: 60FPS</p>
-        </div>
       </section>
 
     {/* MY PROJECTS SECTION */}
-    <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[49px] relative overflow-hidden bg-white">
+    <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[45px] relative overflow-hidden bg-white">
       <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
+      
       <div className="max-w-[90rem] mx-auto relative z-10">
         <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block mb-12 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
           <h2 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">My Projects</h2>
         </div>
         
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-8 lg:gap-10">
 
           {/* SAJELCO WEBSITE */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+
             <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
               <img src="/sajelco.png" alt="SAJELCO" className="w-full h-full object-cover filter contrast-110" />
             </div>
+
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">SAJELCO</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">React.js / Node.js</span>
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">SAJELCO's Website</span>
                 </div>
+
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer Intern</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer</span></p>
+
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Migrated SAJELCO’s website to a React.js/Node.js stack and created a geospatial complaints module, 
-                    accelerating response times within their approx. 40,000 consumer-reach by enabling location-tagged reports/complaints.
+                    • Developed using React.js/Node.js <br />
+                    • Migrated from a PHP/JavaScript stack <br />
+                    • Website for an electric cooperative <br />
+                    • Now being used by SAJELCO
                   </p>
- 
+
                 </div>
+
               </div>
               
               <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
                 <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
                   PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Intern Project</span>
                 </div>
+
                 {/* ACTION BUTTONS */}
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a href="https://sajelco.net/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
@@ -431,31 +462,30 @@ export default function Portfolio() {
 
           {/* R1-Amianan Presyo */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+
             <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
               <img src="/r1-amianan.png" alt="R1 Amianan Presyo" className="w-full h-full object-cover filter contrast-110" />
             </div>
+
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
                   <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">R1 Amianan Presyo</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">Python / Streamlit</span>
                 </div>
+
                 <div className="space-y-2">
                   <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer</span></p>
-                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    An interactive real-time monitoring and logistics tool designed to track agricultural commodity prices and regional weather conditions across Region I (Ilocos Region), Philippines.
-                    Amianan Presyo (Northern Prices) serves as a centralized hub for farmers, traders, and logistics planners to monitor the fluctuating market landscape of Northern Luzon.
-                  </p>
 
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    <span className="font-black uppercase tracking-wide text-foreground">Key Features</span><br />
-                    A. Real-Time Price Monitor<br />
-                    B. Historical Trend Analysis<br />
-                    C. Regional Weather Integration<br />
-                    D. Logistics & Cost Calculator
+                    • Real-Time Price Monitor <br />
+                    • Historical Trend Analysis <br />
+                    • Regional Weather Integration <br />
+                    • Logistics & Cost Calculator
                   </p>
 
                 </div>
+
               </div>
               
               <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
@@ -477,6 +507,7 @@ export default function Portfolio() {
 
           {/* GRAHPPY */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+
             <div className="relative aspect-video w-full bg-white border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
               <img 
                 src="/graphh1.png" 
@@ -486,18 +517,25 @@ export default function Portfolio() {
             </div>
 
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+
               <div className="space-y-4">
+
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
                   <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahppy</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
                 </div>
+
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Game Developer</span></p>
+
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Developed a coordinate-based arcade survival loop where players intercept time-decaying alert nodes 
-                    by manipulating independent X and Y axis sliders with grid path obstruction, and power-up systems.
+                    • Developed using JavaScript/HTML5 <br />
+                    • Graph-based game design <br />
+                    • Timer challenge <br />
+                    • Damage challenge
                   </p>
+
                 </div>
+
               </div>
               
               <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
@@ -516,6 +554,7 @@ export default function Portfolio() {
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -533,24 +572,31 @@ export default function Portfolio() {
             </div>
 
             <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
                   <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Fly Hammy!</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
                 </div>
+
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Game Developer</span></p>
+
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Developed an arcade-style Flappy Bird remake using native JavaScript and HTML5 Canvas, implementing mechanics like a jump-triggered 
-                    rotational rolling animation and a dynamic collision-detection pipeline.
+                    • Developed using JavaScript/HTML5<br />
+                    • Side Scrolling <br />
+                    • Characters to unlock <br />
+                    • Remake of Flappy Bird
                   </p>
+
                 </div>
+
               </div>
       
                 <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
                   <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
                     PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
                   </div>
+
                   {/* ACTION BUTTONS */}
                   <div className="flex flex-wrap gap-3 pt-2">
                     <a 
@@ -608,7 +654,7 @@ export default function Portfolio() {
           </div>
 
           <p className="bg-white/80 px-2 py-0.5 rounded-xs">© 2026 JUSTIN REI E. JOSE. ALL RIGHTS RESERVED.</p>
-          
+
         </div>
       </section>
 
