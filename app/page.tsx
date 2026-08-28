@@ -55,8 +55,8 @@ export default function Portfolio() {
       {/* TOP VIEWPORT BAR */}
       <div className="w-full bg-white border-b-4 border-foreground px-4 py-3 flex justify-between items-center gap-4 font-mono text-xs font-black fixed top-0 left-0 right-0 z-50 h-[49px]">
         <div className="flex items-center gap-3 sm:gap-6">
-          <span className="bg-black text-white px-2 py-0.5 tracking-tighter text-[10px] sm:text-xs">PROJECT_CORE</span>
-          <span className="text-muted-foreground hidden sm:inline">v2.6_STABLE</span>
+          <span className="bg-black text-white px-2 py-0.5 tracking-tighter text-[10px] sm:text-xs">PORTFOLIO</span>
+          <span className="text-muted-foreground hidden sm:inline">v2.7_STABLE</span>
         </div>
 
         <div className="flex items-center gap-2 text-[9px] sm:text-[10px] bg-zinc-100 border border-zinc-400 px-2 py-1">
@@ -107,7 +107,7 @@ export default function Portfolio() {
 
         <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 flex-grow items-stretch relative z-10">
           
-          {/* LEFT SIDEBAR (INCLUDES ACTIVE PROCESSES NOW) */}
+          {/* LEFT SIDEBAR */}
           <div className="lg:col-span-3 border-b-4 lg:border-b-0 lg:border-r-4 border-foreground p-5 md:p-6 flex flex-col justify-between space-y-6 graph-paper bg-white/80 order-2 lg:order-1 relative z-20">
             <div className="space-y-6 w-full">
               <div className="flex justify-between items-center border-b-2 border-foreground pb-2 font-mono bg-white backdrop-blur-xs px-1">
@@ -270,7 +270,7 @@ export default function Portfolio() {
             <br />
 
             <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
-              <p className="text-center font-black text-muted-foreground uppercase text-[10px] tracking-wider">// SYSTEM_DIRECTORY</p>
+              <p className="text-center font-black text-muted-foreground uppercase text-[11px] tracking-wider">Follow me at my socials:</p>
 
               <div className="flex justify-center gap-4 pt-2 mb-10 mt-5">
                 {/* GitHub */}
@@ -411,7 +411,7 @@ export default function Portfolio() {
       
       <div className="max-w-[90rem] mx-auto relative z-10">
         <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block mb-12 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-          <h2 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter">My Projects</h2>
+          <h3 className="text-5xl md:text-5xl font-black italic uppercase tracking-tighter">My Projects</h3>
         </div>
         
         {/* GRID */}
@@ -432,7 +432,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">Personal Project | Web Development</p>
 
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
                     • Developed using React.js/Node.js <br />
@@ -445,10 +445,7 @@ export default function Portfolio() {
 
               </div>
               
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Intern Project</span>
-                </div>
+              <div className="flex flex-col gap-4">
 
                 {/* ACTION BUTTONS */}
                 <div className="flex flex-wrap gap-3 pt-2">
@@ -475,7 +472,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Web Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">Personal Project | Data Analysis</p>
 
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
                     • Real-Time Price Monitor <br />
@@ -488,10 +485,8 @@ export default function Portfolio() {
 
               </div>
               
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-zinc-100 text-foreground px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Personal Project</span>
-                </div>
+              <div className="flex flex-col gap-4">
+
                 {/* ACTION BUTTONS */}
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a href="https://r1-amianan.streamlit.app/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-[120px] text-center bg-foreground text-white hover:bg-zinc-800 font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all">
@@ -525,7 +520,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Game Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">Indie Game | Game Design/Development</p>
 
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
                     • Developed using JavaScript/HTML5 <br />
@@ -538,10 +533,8 @@ export default function Portfolio() {
 
               </div>
               
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
-                </div>
+              <div className="flex flex-col gap-4">
+
                 {/* ACTION BUTTONS */}
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a 
@@ -579,7 +572,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Game Developer</span></p>
+                  <p className="text-foreground font-bold text-base md:text-lg">Indie Game | Game Design/Development</p>
 
                   <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
                     • Developed using JavaScript/HTML5<br />
@@ -592,10 +585,7 @@ export default function Portfolio() {
 
               </div>
       
-                <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                  <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                    PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
-                  </div>
+                <div className="flex flex-col gap-4">
 
                   {/* ACTION BUTTONS */}
                   <div className="flex flex-wrap gap-3 pt-2">
