@@ -394,50 +394,6 @@ export default function Portfolio() {
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-10">
 
-          {/* GRAHPPY */}
-          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
-            <div className="relative aspect-video w-full bg-white border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
-              <img 
-                src="/graphh1.png" 
-                alt="GRAHPPY Screenshot" 
-                className="w-full h-full object-contain filter contrast-110" 
-              />
-            </div>
-
-            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
-                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahppy</span>
-                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
-                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
-                    Developed a coordinate-based arcade survival loop where players intercept time-decaying alert nodes 
-                    by manipulating independent X and Y axis sliders with grid path obstruction, and power-up systems.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
-                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
-                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
-                </div>
-                {/* ACTION BUTTONS */}
-                <div className="flex flex-wrap gap-3 pt-2">
-                  <a 
-                    href="#" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
-                  >
-                    TO BE DEPLOYED
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* SAJELCO WEBSITE */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
             <div className="relative aspect-video w-full bg-zinc-100 border-4 border-foreground overflow-hidden mb-6 shrink-0">
@@ -519,8 +475,51 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* FLY HAMMY! */}
+          {/* GRAHPPY */}
+          <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
+            <div className="relative aspect-video w-full bg-white border-4 border-foreground overflow-hidden mb-6 shrink-0 flex items-center justify-center text-zinc-500 font-mono font-bold text-lg">
+              <img 
+                src="/graphh1.png" 
+                alt="GRAHPPY Screenshot" 
+                className="w-full h-full object-contain filter contrast-110" 
+              />
+            </div>
 
+            <div className="font-mono text-base space-y-4 flex-grow flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 border-b-4 border-foreground pb-2">
+                  <span className="font-black text-2xl md:text-3xl uppercase tracking-tight">Grahppy</span>
+                  <span className="bg-foreground text-white px-2 py-0.5 text-xs md:text-sm font-bold uppercase tracking-wider">JavaScript / HTML5</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-foreground font-bold text-base md:text-lg">ROLE: <span className="underline decoration-2">Solo Game Developer</span></p>
+                  <p className="text-zinc-800 text-base md:text-lg leading-relaxed font-medium">
+                    Developed a coordinate-based arcade survival loop where players intercept time-decaying alert nodes 
+                    by manipulating independent X and Y axis sliders with grid path obstruction, and power-up systems.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="pt-4 border-t-4 border-foreground flex flex-col gap-4">
+                <div className="text-sm md:text-base text-foreground font-black uppercase tracking-wide">
+                  PROJECT TYPE: <span className="bg-[#e05345] text-white px-2 py-0.5 border-2 border-foreground shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Indie Game</span>
+                </div>
+                {/* ACTION BUTTONS */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 min-w-[120px] text-center bg-[#e05345] text-white hover:bg-[#c94437] font-black uppercase text-base py-3 border-2 border-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all"
+                  >
+                    TO BE DEPLOYED
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FLY HAMMY! */}
           <div className="bg-white border-4 border-foreground p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full min-h-[600px]">
             <div className="grid grid-cols-2 gap-4 mb-6 shrink-0">
 
