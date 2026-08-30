@@ -89,7 +89,7 @@ export default function Portfolio() {
       {/* MOBILE NAVIGATION OVERLAY */}
       {isMobileMenuOpen && (
         <div className="fixed top-[49px] left-0 w-full bg-white border-b-4 border-foreground z-40 p-6 font-mono text-sm font-bold flex flex-col gap-4 shadow-xl lg:hidden">
-          {["GAMES", "CONTACT"].map((item) => (
+          {["PROJECTS", "CONTACT"].map((item) => (
             <button 
               key={item} 
               onClick={() => scrollToSection(item.toLowerCase())}
@@ -102,14 +102,15 @@ export default function Portfolio() {
       )}
 
       {/* HERO CONTAINER */}
-      <section className="min-h-[calc(100vh-49px)] flex flex-col justify-between border-b-4 border-foreground relative bg-white overflow-hidden">
+      <section className="flex flex-col justify-between border-b-4 border-foreground relative bg-white overflow-hidden">
         <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none" />
 
-        <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 flex-grow items-stretch relative z-10">
+        <div className="w-full max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-start relative z-10">
           
           {/* LEFT SIDEBAR */}
           <div className="lg:col-span-3 border-b-4 lg:border-b-0 lg:border-r-4 border-foreground p-5 md:p-6 flex flex-col justify-between space-y-6 graph-paper bg-white/80 order-2 lg:order-1 relative z-20">
-            <div className="space-y-6 w-full">
+            <div className="space-y-4 w-full">
+              
               <div className="flex justify-between items-center border-b-2 border-foreground pb-2 font-mono bg-white backdrop-blur-xs px-1">
                 <span className="font-black text-xs text-muted-foreground uppercase">// WHO AM I</span>
                 <span className="text-[10px] bg-zinc-200 px-1 font-bold">ID: P1</span>
@@ -137,7 +138,7 @@ export default function Portfolio() {
               </div>
 
               {/* MY PROJECTS */}
-              <div className="pt-2 font-mono text-xs space-y-5 w-full">
+              <div className="pt-2 font-mono text-xs space-y-4 w-full">
                 <p className="font-black text-muted-foreground uppercase text-[12px] tracking-wider mb-1">// MY PROJECTS</p>
 
                 {/* SAJELCO Website */}
@@ -169,7 +170,6 @@ export default function Portfolio() {
                   </div>
                   <span className="text-[8px] bg-zinc-100 border border-zinc-400 px-1.5 py-0.5 font-black text-muted-foreground group-hover:bg-foreground group-hover:text-white transition-colors shrink-0">GO &gt;</span>
                 </div>
-
 
                 {/* GRAPHYY */}
                 <div 
@@ -267,10 +267,9 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <br />
 
-            <div className="pt-4 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
-              <p className="text-center font-black text-muted-foreground uppercase text-[11px] tracking-wider">Follow me at my socials:</p>
+            <div className="pt-10 border-t-2 border-dashed border-zinc-200 font-mono text-xs space-y-2">
+              <p className="text-center font-black text-muted-foreground uppercase text-[11px] tracking-wider">Check out my other works:</p>
 
               <div className="flex justify-center gap-4 pt-2 mb-10 mt-5">
                 {/* GitHub */}
@@ -314,12 +313,13 @@ export default function Portfolio() {
           </div>
 
           {/* RIGHT SIDEBAR */}
-          <div className="lg:col-span-3 border-l-0 lg:border-l-4 border-foreground p-4 font-mono text-xs space-y-6 graph-paper bg-white/80 order-3 relative z-20 overflow-y-auto max-h-[calc(100vh-100px)] lg:max-h-none flex flex-col justify-between">
-            <div className="space-y-6 flex-grow">
+          <div className="lg:col-span-3 border-l-0 lg:border-l-4 border-foreground p-4 font-mono text-xs space-y-6 graph-paper bg-white/80 order-3 relative z-20 flex flex-col justify-between">
+            <div className="space-y-6">
               
               {/* ACADEMIC RECORD */}
               <div className="space-y-3">
-                <p className="font-black text-muted-foreground uppercase tracking-wider">// ACADEMIC_RECORD</p>
+                
+                <p className="font-black text-muted-foreground uppercase tracking-wider">//ACADEMICS</p>
 
                 <div className="bg-white border-2 border-foreground p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <h4 className="text-[16px] font-black uppercase text-accent">BS In Computer Science</h4>
@@ -337,7 +337,8 @@ export default function Portfolio() {
 
               {/* EXPERIENCE LOG */}
               <div className="space-y-3">
-                <p className="font-black text-muted-foreground uppercase tracking-wider">// EXPERIENCE_LOG</p>
+
+                <p className="font-black text-muted-foreground uppercase tracking-wider">// EXPERIENCE</p>
 
                 <div className="bg-[#f2efe9] border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <div className="flex justify-between items-center border-b border-black/10 pb-1 mb-1">
@@ -377,12 +378,14 @@ export default function Portfolio() {
                 </div>
 
               </div>
-
             </div>
 
             {/* SKILLS MODULES */}
-            <div className="pt-4 border-t-2 border-foreground mt-auto">
-              <div className="space-y-3 text-[12px]">
+            <div className="pt-4 border-foreground space-y-5">
+
+              <p className="font-black text-muted-foreground uppercase tracking-wider">// SKILLS</p>
+
+              <div className="space-y-5 text-[12px]">
                 <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                   <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ TECHNICAL SKILLS</p>
                   <p className="text-foreground font-black text-[12px] leading-tight">SQL, Python, Java, HTML/CSS, React.js, Next.js, Wireframing, Software Prototyping, Agile, QA Testing </p>
@@ -393,13 +396,9 @@ export default function Portfolio() {
                   <p className="text-foreground font-black text-[12px] leading-tight">UI/UX Design, Web Design, HCI, Data Analysis, Copywriting, Digital Marketing, SEO, Technical Writing</p>
                 </div>
 
-                <div className="bg-white border-2 border-foreground p-2.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="font-black border-b border-foreground pb-0.5 mb-1 text-accent text-[14px]">▲ Tools</p>
-                  <p className="text-foreground font-black text-[12px] leading-tight">Figma, Canva, Photoshop, Excel, Power BI, Tableau, HubSpot, Jira, GitHub, MS Office 365, CapCut, Penpot</p>
-                </div>
-
               </div>
             </div>
+
           </div>
 
         </div>
