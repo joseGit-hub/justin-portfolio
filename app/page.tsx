@@ -406,12 +406,12 @@ export default function Portfolio() {
       </section>
 
     {/* MY PROJECTS SECTION */}
-    <section id="games" className="py-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[45px] relative overflow-hidden bg-white">
+    <section id="games" className="pt-5 pb-20 px-4 md:px-8 lg:px-16 border-b-4 border-foreground scroll-mt-[45px] relative overflow-hidden bg-white">
       <div className="absolute inset-0 z-0 moving-engine-grid pointer-events-none opacity-60" />
       
-      <div className="max-w-[90rem] mx-auto relative z-10">
+      <div className="max-w-[90rem] mx-auto relative z-10 flex flex-col items-center">
         <div className="bg-white border-4 border-foreground p-6 sm:p-8 inline-block mb-12 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-          <h3 className="text-5xl md:text-5xl font-black italic uppercase tracking-tighter">My Projects</h3>
+          <h3 className="text-6xl md:text-6xl font-black italic uppercase tracking-tighter">My Projects</h3>
         </div>
         
         {/* GRID */}
@@ -642,8 +642,6 @@ export default function Portfolio() {
             </div>
 
           </div>
-
-          <p className="bg-white/80 px-2 py-0.5 rounded-xs">© 2026 JUSTIN REI E. JOSE. ALL RIGHTS RESERVED.</p>
 
         </div>
       </section>
