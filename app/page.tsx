@@ -100,6 +100,7 @@ export default function Portfolio() {
           ))}
         </div>
       )}
+      
 
       {/* HERO CONTAINER */}
       <section className="flex flex-col justify-between border-b-4 border-foreground relative bg-white overflow-hidden">
