@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Menu, X, ArrowDown, Globe } from "lucide-react"
-import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaPinterest, FaCoffee } from "react-icons/fa"
 
 const projects = [
   {
@@ -37,10 +37,16 @@ const projects = [
 
 const educationItems = [
   {
-    period: "2026",
-    role: "BS Computer Science",
+    period: "2022-26",
+    role: "BS CompSci",
     company: "STI College San Jose",
     desc: "Completed degree in Computer Science.",
+  },
+  {
+    period: "2021-22",
+    role: "BS CompSci",
+    company: "Saint Louis University, Baguio City",
+    desc: "Did my 1st year of by degree here.",
   },
 ]
 
@@ -103,6 +109,7 @@ const translations = {
 export default function Portfolio() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const [lang, setLang] = useState<"en" | "ilo">("en")
 
   const t = translations[lang]
@@ -193,6 +200,17 @@ export default function Portfolio() {
         </div>
       )}
 
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={() => setSelectedImage(null)}>
+          <div className="relative max-w-4xl w-full bg-[#f7f4ee] p-4 rounded-2xl border-2 border-orange-500 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setSelectedImage(null)} className="absolute top-4 right-4 text-zinc-800 hover:text-orange-600 z-10">
+              <X size={28} />
+            </button>
+            <img src={selectedImage} alt="Enlarged Project Preview" className="w-full h-auto rounded-xl object-contain max-h-[80vh]" />
+          </div>
+        </div>
+      )}
+
       <section className="pt-24 sm:pt-32 pb-24 px-6 text-center max-w-5xl mx-auto">
         <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tight whitespace-nowrap">
           {t.greeting} <span className="italic text-orange-600">Justin</span>
@@ -204,36 +222,38 @@ export default function Portfolio() {
           <p>{t.introLine3}</p>
         </div>
 
-        <div className="mt-10 max-w-sm mx-auto bg-white/25 backdrop-blur-xs p-4 rounded-xl border border-zinc-300/40 shadow-xs text-left">
+        <div className="mt-10 max-w-2xl mx-auto bg-white/25 backdrop-blur-xs p-4 rounded-xl border border-zinc-300/40 shadow-xs text-left">
           <p className="uppercase text-[10px] tracking-widest text-zinc-400 font-bold mb-4 text-center">{t.background}</p>
           
-          <div className="mb-4">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.education}</h3>
-            <div className="space-y-3">
-              {educationItems.map((item, index) => (
-                <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
-                  <div className="flex justify-between items-baseline">
-                    <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
-                    <span className="text-[10px] text-zinc-500">{item.period}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.education}</h3>
+              <div className="space-y-3">
+                {educationItems.map((item, index) => (
+                  <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
+                    <div className="flex justify-between items-baseline">
+                      <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
+                      <span className="text-[10px] text-zinc-500">{item.period}</span>
+                    </div>
+                    <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
                   </div>
-                  <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.experience}</h3>
-            <div className="space-y-3">
-              {experienceItems.map((item, index) => (
-                <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
-                  <div className="flex justify-between items-baseline">
-                    <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
-                    <span className="text-[10px] text-zinc-500">{item.period}</span>
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.experience}</h3>
+              <div className="space-y-3">
+                {experienceItems.map((item, index) => (
+                  <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
+                    <div className="flex justify-between items-baseline">
+                      <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
+                      <span className="text-[10px] text-zinc-500">{item.period}</span>
+                    </div>
+                    <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
                   </div>
-                  <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -245,8 +265,11 @@ export default function Portfolio() {
           <a href="https://www.linkedin.com/in/justinreijose" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
             <FaLinkedin size={28} />
           </a>
-          <a href="https://siyak.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
-            <FaItchIo size={28} />
+          <a href="https://ph.pinterest.com/justoojose/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
+            <FaPinterest size={28} />
+          </a>
+          <a href="https://ko-fi.com/justojose/shop" target="_blank" rel="noopener noreferrer" aria-label="Ko-Fi" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
+            <FaCoffee size={28} />
           </a>
         </div>
 
@@ -256,7 +279,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="max-w-6xl mx-auto px-8 pb-28 border-t border-zinc-300 pt-16">
+      <section id="projects" className="max-w-6xl mx-auto px-8 pb-28">
         <div className="text-center mb-16">
           <h2 className="font-serif text-5xl sm:text-6xl italic text-orange-600">{t.projectGallery}</h2>
           <p className="text-zinc-700 text-lg font-medium mt-3">{t.projectSubtitle}</p>
@@ -265,7 +288,10 @@ export default function Portfolio() {
         <div className="grid sm:grid-cols-2 gap-x-12 gap-y-20">
           {projects.map((p) => (
             <div key={p.title} className="group">
-              <div className="aspect-video bg-white overflow-hidden mb-5 rounded-xl border-2 border-zinc-200 shadow-md group-hover:border-orange-500 group-hover:shadow-xl transition-all duration-300">
+              <div 
+                onClick={() => setSelectedImage(p.img)}
+                className="aspect-video bg-white overflow-hidden mb-5 rounded-xl border-2 border-zinc-200 shadow-md group-hover:border-orange-500 group-hover:shadow-xl transition-all duration-300 cursor-pointer relative"
+              >
                 <img 
                   src={p.img} 
                   alt={p.title} 
@@ -296,7 +322,12 @@ export default function Portfolio() {
 
       <section id="contact" className="max-w-4xl mx-auto px-8 pb-32 text-center pt-16">
         <h2 className="font-serif text-5xl sm:text-6xl italic mb-6 text-orange-600">{t.letsConnect}</h2>
-        <p className="text-zinc-700 text-xl font-medium mb-10">{t.reachOut}</p>
+        <p className="text-zinc-700 text-xl font-medium mb-6">{t.reachOut}</p>
+        <p className="text-zinc-900 font-bold text-lg mb-10">
+          <a href="mailto:justinreijose27@gmail.com" className="hover:text-orange-600 transition-colors underline underline-offset-4">
+            justinreijose27@gmail.com
+          </a>
+        </p>
 
         <div className="flex justify-center gap-14 text-xl font-bold">
           <a href="https://github.com/joseGit-hub" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition-colors">
