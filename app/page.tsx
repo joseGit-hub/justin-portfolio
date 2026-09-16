@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, ArrowDown, Globe } from "lucide-react"
+import { Menu, X, Globe } from "lucide-react"
 import { FaGithub, FaLinkedin, FaPinterest, FaCoffee } from "react-icons/fa"
 
 const projects = [
@@ -11,6 +11,7 @@ const projects = [
     img: "/sajelco.png",
     link: "https://sajelco.net/",
     linkLabel: "Live Project",
+    pinned: true,
   },
   {
     title: "R1 Amianan Presyo",
@@ -18,6 +19,7 @@ const projects = [
     img: "/r1-amianan.png",
     link: "https://r1-amianan.streamlit.app/",
     linkLabel: "Live Project",
+    pinned: false,
   },
   {
     title: "Grahppy",
@@ -25,6 +27,7 @@ const projects = [
     img: "/graphh1.png",
     link: null,
     linkLabel: "Coming soon",
+    pinned: false,
   },
   {
     title: "Fly Hammy!",
@@ -32,6 +35,7 @@ const projects = [
     img: "/flyHammyCover.png",
     link: "https://siyak.itch.io/fly-hammy",
     linkLabel: "Play Game",
+    pinned: false,
   },
 ]
 
@@ -77,32 +81,32 @@ const translations = {
     contactNav: "Contact",
     greeting: "Hello, I'm",
     introLine1: "A web developer who also dabbles in designing digital products.",
-    introLine2: "Umingan, Pangasinan - Filipino, Ilocano",
+    introLine2: "Developer, Designer | Umingan, Pangasinan | Filipino - Ilocano",
     introLine3: " ",
     background: "Background",
     explore: "Explore Project Gallery Below",
-    projectGallery: "Project Gallery",
-    projectSubtitle: "Showcasing web dev, and design work",
+    projectSubtitle: "Here are some of the digital projects I've built. Let's create something great together.",
     letsConnect: "Let's Connect",
     reachOut: "Feel free to reach out through any of these.",
     education: "Education",
     experience: "Experience",
+    pinnedLabel: "PINNED PROJECT",
   },
   ilo: {
     projectsNav: "Proyekto",
     contactNav: "Kontak",
     greeting: "Uyy, siak ni",
     introLine1: "Maysa a web developer nga agdaldakes met kadagiti digital products.",
-    introLine2: "Umingan, Pangasinan - Filipino, Ilocano",
+    introLine2: "Developer, Designer | Umingan, Pangasinan | Filipino - Ilocano",
     introLine3: " ",
     background: "Pakasaritaan",
     explore: "Kitaen dagiti Proyekto Dita Baba",
-    projectGallery: "Listaan dagiti Proyekto",
-    projectSubtitle: "Panangiparang kadagiti obra iti web dev ken designing",
+    projectSubtitle: "Dagtoy dagiti nagapuanak ken proyekto nga mabalin ko met nga aramiden para kenca.",
     letsConnect: "Kontaken nak",
     reachOut: "Mabalin dak nga kontaken ditoy.",
     education: "Edukasion",
     experience: "Kapadasan",
+    pinnedLabel: "PINNED PROJECT",
   },
 }
 
@@ -192,8 +196,8 @@ export default function Portfolio() {
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={() => setIsModalOpen(false)}>
           <div className="relative max-w-md w-full bg-[#f7f4ee] p-4 rounded-2xl border-2 border-orange-500 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-zinc-800 hover:text-orange-600">
-              <X size={28} />
+            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 z-20 bg-[#f7f4ee]/90 hover:bg-[#f7f4ee] w-9 h-9 flex items-center justify-center rounded-full text-zinc-900 font-bold hover:text-orange-600 shadow-md transition-all">
+              <X size={20} />
             </button>
             <img src="/profile-square.png" alt="Justin Rei Jose Enclosed" className="w-full h-auto rounded-xl object-cover" />
           </div>
@@ -203,15 +207,15 @@ export default function Portfolio() {
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={() => setSelectedImage(null)}>
           <div className="relative max-w-4xl w-full bg-[#f7f4ee] p-4 rounded-2xl border-2 border-orange-500 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <button onClick={() => setSelectedImage(null)} className="absolute top-4 right-4 text-zinc-800 hover:text-orange-600 z-10">
-              <X size={28} />
+            <button onClick={() => setSelectedImage(null)} className="absolute top-4 right-4 z-20 bg-[#f7f4ee]/90 hover:bg-[#f7f4ee] w-9 h-9 flex items-center justify-center rounded-full text-zinc-900 font-bold hover:text-orange-600 shadow-md transition-all">
+              <X size={20} />
             </button>
             <img src={selectedImage} alt="Enlarged Project Preview" className="w-full h-auto rounded-xl object-contain max-h-[80vh]" />
           </div>
         </div>
       )}
 
-      <section className="pt-24 sm:pt-32 pb-24 px-6 text-center max-w-5xl mx-auto">
+      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center max-w-5xl mx-auto">
         <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tight whitespace-nowrap">
           {t.greeting} <span className="italic text-orange-600">Justin</span>
         </h1>
@@ -219,100 +223,102 @@ export default function Portfolio() {
         <div className="mt-6 text-zinc-700 text-lg sm:text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto flex flex-col gap-1">
           <p>{t.introLine1}</p>
           <p>{t.introLine2}</p>
-          <p>{t.introLine3}</p>
         </div>
 
-        <div className="mt-10 max-w-2xl mx-auto bg-white/25 backdrop-blur-xs p-4 rounded-xl border border-zinc-300/40 shadow-xs text-left">
-          <p className="uppercase text-[10px] tracking-widest text-zinc-400 font-bold mb-4 text-center">{t.background}</p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.education}</h3>
-              <div className="space-y-3">
-                {educationItems.map((item, index) => (
-                  <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
-                    <div className="flex justify-between items-baseline">
-                      <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
-                      <span className="text-[10px] text-zinc-500">{item.period}</span>
-                    </div>
-                    <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">{t.experience}</h3>
-              <div className="space-y-3">
-                {experienceItems.map((item, index) => (
-                  <div key={index} className="border-l-2 border-orange-500 pl-3 py-0.5">
-                    <div className="flex justify-between items-baseline">
-                      <p className="font-semibold text-xs text-zinc-900">{item.role} — {item.company}</p>
-                      <span className="text-[10px] text-zinc-500">{item.period}</span>
-                    </div>
-                    <p className="text-[10px] text-zinc-600 mt-0.5">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center gap-8 mt-8 text-zinc-800">
+        <div className="flex justify-center gap-10 mt-10 text-zinc-800">
           <a href="https://github.com/joseGit-hub" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
-            <FaGithub size={28} />
+            <FaGithub size={36} />
           </a>
           <a href="https://www.linkedin.com/in/justinreijose" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
-            <FaLinkedin size={28} />
+            <FaLinkedin size={36} />
           </a>
           <a href="https://ph.pinterest.com/justoojose/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
-            <FaPinterest size={28} />
+            <FaPinterest size={36} />
           </a>
           <a href="https://ko-fi.com/justojose/shop" target="_blank" rel="noopener noreferrer" aria-label="Ko-Fi" className="hover:text-orange-600 transition-colors transform hover:scale-110 duration-200">
-            <FaCoffee size={28} />
+            <FaCoffee size={36} />
           </a>
-        </div>
-
-        <div className="mt-12 flex flex-col items-center justify-center cursor-pointer" onClick={() => scrollToSection("projects")}>
-          <span className="text-base font-bold tracking-widest text-orange-600 uppercase mb-2">{t.explore}</span>
-          <ArrowDown className="text-orange-600 animate-bounce" size={28} />
         </div>
       </section>
 
-      <section id="projects" className="max-w-6xl mx-auto px-8 pb-28">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-5xl sm:text-6xl italic text-orange-600">{t.projectGallery}</h2>
-          <p className="text-zinc-700 text-lg font-medium mt-3">{t.projectSubtitle}</p>
+      <section id="projects" className="max-w-7xl mx-auto px-8 pb-20 pt-4">
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-orange-600 text-lg sm:text-xl font-medium mt-3 leading-relaxed">{t.projectSubtitle}</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-x-12 gap-y-20">
+        <div className="grid sm:grid-cols-2 gap-x-14 gap-y-24">
           {projects.map((p) => (
-            <div key={p.title} className="group">
+            <div key={p.title} className="flex flex-col">
+              {p.pinned ? (
+                <div className="mb-3 inline-block self-start bg-orange-600 text-white text-xs font-bold tracking-widest px-3 py-1 rounded-full shadow-xs">
+                  ★ {t.pinnedLabel}
+                </div>
+              ) : (
+                <div className="mb-3 h-[26px]"></div>
+              )}
               <div 
                 onClick={() => setSelectedImage(p.img)}
-                className="aspect-video bg-white overflow-hidden mb-5 rounded-xl border-2 border-zinc-200 shadow-md group-hover:border-orange-500 group-hover:shadow-xl transition-all duration-300 cursor-pointer relative"
+                className={`aspect-video bg-white overflow-hidden mb-5 rounded-xl border-2 shadow-md group-hover:shadow-xl transition-all duration-300 cursor-pointer relative ${p.pinned ? "border-orange-500 ring-2 ring-orange-500/20" : "border-zinc-200"}`}
               >
                 <img 
                   src={p.img} 
                   alt={p.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out" 
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 ease-out" 
                 />
               </div>
-              <p className="text-xl sm:text-2xl font-semibold">
+              <p className="text-2xl sm:text-3xl font-semibold">
                 <span className="font-serif italic text-zinc-900">{p.title}</span>
                 <span className="text-zinc-700"> — {p.category}</span>
               </p>
               <div className="mt-2">
                 {p.link ? (
-                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-orange-600 hover:text-orange-700 underline underline-offset-4">
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-orange-600 hover:text-orange-700 underline underline-offset-4">
                     {p.linkLabel}
                   </a>
                 ) : (
-                  <span className="text-lg font-semibold text-zinc-400">{p.linkLabel}</span>
+                  <span className="text-xl font-semibold text-zinc-400">{p.linkLabel}</span>
                 )}
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-8 pb-24">
+        <div className="bg-white/30 backdrop-blur-xs p-8 sm:p-12 rounded-2xl border border-zinc-300/60 shadow-sm text-left">
+          <p className="uppercase text-xs tracking-widest text-orange-600 font-bold mb-8 text-center">{t.background}</p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-orange-600 mb-4">{t.education}</h3>
+              <div className="space-y-5">
+                {educationItems.map((item, index) => (
+                  <div key={index} className="border-l-2 border-orange-500 pl-4 py-1">
+                    <div className="flex justify-between items-baseline">
+                      <p className="font-semibold text-sm sm:text-base text-zinc-900">{item.role} — {item.company}</p>
+                      <span className="text-xs text-zinc-500">{item.period}</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-zinc-600 mt-1">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-orange-600 mb-4">{t.experience}</h3>
+              <div className="space-y-5">
+                {experienceItems.map((item, index) => (
+                  <div key={index} className="border-l-2 border-orange-500 pl-4 py-1">
+                    <div className="flex justify-between items-baseline">
+                      <p className="font-semibold text-sm sm:text-base text-zinc-900">{item.role} — {item.company}</p>
+                      <span className="text-xs text-zinc-500">{item.period}</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-zinc-600 mt-1">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
