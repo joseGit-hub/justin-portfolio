@@ -77,7 +77,7 @@ const experienceItems = [
 
 const translations = {
   en: {
-    projectsNav: "Projects",
+    aboutNav: "About",
     contactNav: "Contact",
     greeting: "Hello, I'm",
     introLine1: "A web developer who also dabbles in designing digital products.",
@@ -93,7 +93,7 @@ const translations = {
     pinnedLabel: "PINNED PROJECT",
   },
   ilo: {
-    projectsNav: "Proyekto",
+    aboutNav: "Mainbagana",
     contactNav: "Kontak",
     greeting: "Uyy, siak ni",
     introLine1: "Maysa a web developer nga agdaldakes met kadagiti digital products.",
@@ -155,8 +155,8 @@ export default function Portfolio() {
 
           <div className="flex items-center gap-6">
             <nav className="hidden sm:flex gap-8 text-xl font-bold text-zinc-900">
-              <button onClick={() => scrollToSection("projects")} className="hover:text-orange-600 transition-colors">
-                {t.projectsNav}
+              <button onClick={() => scrollToSection("background")} className="hover:text-orange-600 transition-colors">
+                {t.aboutNav}
               </button>
               <button onClick={() => scrollToSection("contact")} className="hover:text-orange-600 transition-colors">
                 {t.contactNav}
@@ -187,7 +187,7 @@ export default function Portfolio() {
 
         {isMobileMenuOpen && (
           <div className="sm:hidden flex flex-col gap-4 px-8 pb-6 text-2xl font-bold text-zinc-900 bg-[#e8e2d5]/95 border-b border-zinc-300/70 backdrop-blur-md">
-            <button onClick={() => scrollToSection("projects")} className="text-left">{t.projectsNav}</button>
+            <button onClick={() => scrollToSection("background")} className="text-left">{t.aboutNav}</button>
             <button onClick={() => scrollToSection("contact")} className="text-left">{t.contactNav}</button>
           </div>
         )}
@@ -243,7 +243,7 @@ export default function Portfolio() {
 
       <section id="projects" className="max-w-7xl mx-auto px-8 pb-20 pt-4">
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <p className="text-orange-600 text-lg sm:text-xl font-medium mt-3 leading-relaxed">{t.projectSubtitle}</p>
+          <p className="text-orange-600 text-xl sm:text-2xl md:text-3xl font-semibold mt-3 leading-relaxed">{t.projectSubtitle}</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-x-14 gap-y-24">
@@ -266,7 +266,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 ease-out" 
                 />
               </div>
-              <p className="text-2xl sm:text-3xl font-semibold">
+              <p className="text-3xl sm:text-4xl font-semibold">
                 <span className="font-serif italic text-zinc-900">{p.title}</span>
                 <span className="text-zinc-700"> — {p.category}</span>
               </p>
@@ -284,18 +284,18 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto px-8 pb-24">
+      <section id="background" className="max-w-5xl mx-auto px-8 pb-24">
         <div className="bg-white/30 backdrop-blur-xs p-8 sm:p-12 rounded-2xl border border-zinc-300/60 shadow-sm text-left">
-          <p className="uppercase text-xs tracking-widest text-orange-600 font-bold mb-8 text-center">{t.background}</p>
+          <p className="uppercase text-sm tracking-widest text-orange-600 font-bold mb-8 text-center">{t.background}</p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-orange-600 mb-4">{t.education}</h3>
+              <h3 className="text-base font-bold uppercase tracking-wider text-orange-600 mb-4">{t.education}</h3>
               <div className="space-y-5">
                 {educationItems.map((item, index) => (
                   <div key={index} className="border-l-2 border-orange-500 pl-4 py-1">
                     <div className="flex justify-between items-baseline">
-                      <p className="font-semibold text-sm sm:text-base text-zinc-900">{item.role} — {item.company}</p>
+                      <p className="font-semibold text-base sm:text-lg text-zinc-900">{item.role} — {item.company}</p>
                       <span className="text-xs text-zinc-500">{item.period}</span>
                     </div>
                     <p className="text-xs sm:text-sm text-zinc-600 mt-1">{item.desc}</p>
@@ -305,12 +305,12 @@ export default function Portfolio() {
             </div>
 
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-orange-600 mb-4">{t.experience}</h3>
+              <h3 className="text-base font-bold uppercase tracking-wider text-orange-600 mb-4">{t.experience}</h3>
               <div className="space-y-5">
                 {experienceItems.map((item, index) => (
                   <div key={index} className="border-l-2 border-orange-500 pl-4 py-1">
                     <div className="flex justify-between items-baseline">
-                      <p className="font-semibold text-sm sm:text-base text-zinc-900">{item.role} — {item.company}</p>
+                      <p className="font-semibold text-base sm:text-lg text-zinc-900">{item.role} — {item.company}</p>
                       <span className="text-xs text-zinc-500">{item.period}</span>
                     </div>
                     <p className="text-xs sm:text-sm text-zinc-600 mt-1">{item.desc}</p>
