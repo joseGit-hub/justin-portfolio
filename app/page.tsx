@@ -47,15 +47,21 @@ const educationItems = [
 const experienceItems = [
   {
     period: "Mar 2026 – Present",
-    role: "QA Tester",
+    role: "QA Tester (Freelance)",
     company: "Nueva Technology",
     desc: "Ensuring software reliability and quality assurance.",
   },
   {
     period: "Jan – Apr 2026",
-    role: "Web Dev Intern",
+    role: "Web Developer (Intern)",
     company: "SAJELCO",
-    desc: "Worked on web development tasks and site updates.",
+    desc: "Interned as a web dev and created a working site for them.",
+  },
+  {
+    period: "2021-2026",
+    role: "Writer (Freelance)",
+    company: "SAJELCO",
+    desc: "Worked on ghostwriting research papers, thesis and tech documentations.",
   },
 ]
 
